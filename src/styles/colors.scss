@@ -1,0 +1,49 @@
+:root
+{
+    /* Color variables */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+
+    /* Brand colors */
+    --color-primary: #646cff;
+    --color-primary-hover: #535bf2;
+    --color-primary-light: rgba(100, 108, 255, 0.1);
+    --color-primary-shadow: rgba(100, 108, 255, 0.3);
+
+    /* Background colors */
+    --color-bg-light: #ffffff;
+    --color-bg-dark: #1a1a1a;
+    --color-bg-card-light: #ffffff;
+    --color-bg-card-dark: #2a2a2a;
+
+    /* Text colors */
+    --color-text-light: #333333;
+    --color-text-dark: #e0e0e0;
+    --color-text-muted: #6b7280;
+
+    /* Gradient colors */
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    /* Navigation colors */
+    --color-nav-bg-light: rgba(255, 255, 255, 0.95);
+    --color-nav-bg-dark: rgba(26, 26, 26, 0.95);
+
+    /* Scrollbar colors */
+    --color-scrollbar-track: #f1f1f1;
+    --color-scrollbar-thumb: var(--color-primary);
+    --color-scrollbar-thumb-hover: var(--color-primary-hover);
+
+    /* Shadow colors */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);
+}
