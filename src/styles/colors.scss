@@ -15,31 +15,30 @@
     --color-gray-900: #111827;
 
     /* Brand colors */
-    --color-primary: #646cff;
-    --color-primary-hover: #535bf2;
-    --color-primary-light: rgba(100, 108, 255, 0.1);
-    --color-primary-shadow: rgba(100, 108, 255, 0.3);
+    --color-primary: #1A1A1D;
+    --color-primary-hover: #3B1C32;
+    --color-primary-light: #6A1E55;
+    --color-primary-shadow: #A64D79;
 
     /* Background colors */
-    --color-bg-light: #ffffff;
-    --color-bg-dark: #1a1a1a;
-    --color-bg-card-light: #ffffff;
-    --color-bg-card-dark: #2a2a2a;
+    --color-bg-dark: #1A1A1D;
+    --color-bg-card-light: #1A1A1D;
+    --color-bg-card-dark: #3B1C32;
 
     /* Text colors */
-    --color-text-light: #333333;
-    --color-text-dark: #e0e0e0;
-    --color-text-muted: #6b7280;
+    --color-text-light: #A64D79;
+    --color-text-dark: #6A1E55;
+    --color-text-muted: #ffffff;
 
     /* Gradient colors */
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-primary: linear-gradient(135deg, #1A1A1D 0%, #3B1C32 100%);
 
     /* Navigation colors */
     --color-nav-bg-light: rgba(255, 255, 255, 0.95);
-    --color-nav-bg-dark: rgba(26, 26, 26, 0.95);
+    --color-nav-bg-dark: #1A1A1D;
 
     /* Scrollbar colors */
-    --color-scrollbar-track: #f1f1f1;
+    --color-scrollbar-track: #1A1A1D;
     --color-scrollbar-thumb: var(--color-primary);
     --color-scrollbar-thumb-hover: var(--color-primary-hover);
 
