@@ -1,0 +1,29 @@
+.toast
+{
+    display: none;
+    position: fixed;
+    bottom: var(--spacing-4);
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--spacing-4));
+    background-color: var(--color-bg-card-dark);
+    color: var(--color-white);
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--radius-md);
+    box-shadow: 0 var(--spacing-xs) var(--spacing-sm) var(--shadow-medium);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: var(--z-tooltip);
+    text-align: center;
+    min-width: 250px;
+    max-width: 90%;
+    box-sizing: border-box;
+    border: 1px solid var(--color-text-light);
+
+
+    &--visible
+    {
+        display: block;
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}

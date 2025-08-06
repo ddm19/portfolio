@@ -14,7 +14,7 @@ const Navbar = () => (
     <nav className="nav animate__animated animate__slideInDown">
         <div className="navContainer">
             <div className="logo">
-                <img src="/logo.svg" alt="logo" className="logo__img" />
+                <a href='https://www.thedm.es'><img src="/logo.svg" alt="logo" className="logo__img" /> </a>
                 <h2 className="logo__text">
                     The<span className="logo__text--highlight">DM</span>
                 </h2>
