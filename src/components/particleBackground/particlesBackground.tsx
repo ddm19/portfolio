@@ -36,18 +36,18 @@ export default function ParticlesBackground() {
                     },
                 },
                 particles: {
-                    number: { value: 60, density: { enable: true } },
+                    number: { value: 30, density: { enable: true } },
                     shape: {
                         type: 'image',
                         options: {
                             image: [
-                                { src: '/d20.png', width: 30, height: 30 },
-                                { src: '/d6.png', width: 20, height: 20 },
-                                { src: '/d4.svg', width: 20, height: 20 },
+                                { src: '/d20.png' },
+                                { src: '/d6.png' },
+                                { src: '/d4.png' },
                             ]
                         }
                     },
-                    size: { value: { min: 20, max: 30 } },
+                    size: { value: { min: 45, max: 45 } },
                     opacity: { value: 0.5 },
 
                     links: {

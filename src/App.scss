@@ -54,15 +54,25 @@ body
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: var(--navbar-height);
+  margin-top: var(--spacing-2);
   flex: 1;
   padding: var(--spacing-1) var(--spacing-3);
   z-index: var(--z-index-base);
+  gap: 10vh;
 
   @media (max-width: 768px)
   {
     padding: 0 var(--spacing-2);
   }
+}
+
+.customSection
+{
+  backdrop-filter: blur(var(--radius-lg));
+  border: 1px solid var(--color-text-light);
+  animation: pulsate 1s infinite alternate;
+  border-radius: var(--radius-lg);
+
 }
 
 
@@ -190,11 +200,10 @@ button:hover
   bottom: var(--spacing-2);
   right: var(--spacing-2);
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-text-light);
   border: none;
-  border-radius: 50%;
-  width: var(--radius-full);
-  height: var(--radius-full);
+  width: var(--radius-sm);
+  height: var(--size-2xl);
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
@@ -203,6 +212,8 @@ button:hover
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: var(--font-2xl);
+  font-weight: bolder;
 }
 
 .scrollToTop.visible

@@ -1,17 +1,14 @@
 .heroSection
 {
-    backdrop-filter: blur(var(--spacing-xs));
-    border: 1px solid var(--color-text-light);
-    animation: pulsate 1s infinite alternate;
+
     width: 50%;
     height: var(--container-xs);
     text-align: center;
-    border-radius: var(--radius-lg);
 
     @media (max-width: 768px)
     {
         width: 100%;
-        height: var(--container-xs);
+        height: var(--container-sm);
 
     }
 
@@ -27,10 +24,14 @@
 
     &__title
     {
+        color: var(--color-text-light);
+        font-weight: bold;
+        text-shadow: var(--color-black) 0 0 10px;
 
         @media (max-width: 768px)
         {
             width: 100%;
+
         }
 
         &--highlight
@@ -39,7 +40,20 @@
             font-weight: bold;
             display: inline-block;
             text-shadow: 0 0 1rem var(--color-text-highlight);
+
+            @media (max-width: 768px)
+            {
+                width: 100%;
+            }
+
         }
+    }
+
+    &__subtitle
+    {
+        color: var(--color-text-muted);
+        text-shadow: 0 0 1rem var(--color-black);
+
     }
 
     &__content
@@ -99,13 +113,15 @@
 
         @media (max-width: 768px)
         {
-            font-size: var(--font-xl);
+            font-size: var(--font-4xl);
+            line-height: 1.2;
         }
     }
 
     p
     {
-        font-size: var(--font-lg);
+        margin-bottom: var(--spacing-2);
+        font-size: var(--font-sm);
         color: var(--color-text-muted);
     }
 }

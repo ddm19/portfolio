@@ -4,6 +4,7 @@ import Navbar from 'components/navbar/navbar'
 import ParticlesBackground from 'components/particleBackground/particlesBackground';
 import HeroSection from 'components/heroSection/heroSection';
 import Toast from 'components/toast/toast';
+import About from 'components/about/about';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           }
         }}>
           <HeroSection />
+          <About />
         </main>
 
         <button

@@ -1,10 +1,6 @@
 /* Navigation */
 .nav
 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     backdrop-filter: blur(var(--spacing-xs));
     transition: all 0.3s ease;
     max-height: var(--navbar-height);

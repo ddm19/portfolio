@@ -10,21 +10,24 @@ const HeroSection = () => {
 
     const handleCopyEmail = () => {
         dispatch(showNotification('Email copiado al portapapeles'));
-
         navigator.clipboard.writeText('domenechmorenodaniel@gmail.com');
 
     }
 
 
     return (
-        <section className="heroSection ">
+        <section id='hero' className="heroSection customSection">
             <div className="heroSection__content">
                 <img draggable="false" src='/logo_engineer.svg' alt="Logo" className="heroSection__logo" />
 
-                <div >
+                <div>
                     <h2 className="heroSection__title">
                         Otórgale <span className="heroSection__title--highlight">{text}</span> a tu negocio
                     </h2>
+                    <p className="heroSection__subtitle">
+                        Soy Dani Domenech, un desarrollador web con experiencia en la creación de aplicaciones web modernas y eficientes.
+                        Mi objetivo es ayudarte a alcanzar tus metas digitales con soluciones personalizadas y efectivas.
+                    </p>
                     <div className='heroSection__buttonContainer'>
                         <button >
                             <a href="#contact">
@@ -36,6 +39,7 @@ const HeroSection = () => {
                         </button>
                     </div>
                 </div>
+
 
 
             </div>
