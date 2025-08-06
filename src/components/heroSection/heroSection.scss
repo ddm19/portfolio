@@ -1,0 +1,56 @@
+.heroSection
+{
+    backdrop-filter: blur(var(--spacing-xs));
+    border: 1px solid var(--color-text-light);
+    animation: pulsate 1s infinite alternate;
+    width: 50%;
+    height: var(--container-xs);
+    text-align: center;
+    border-radius: var(--radius-lg);
+
+    &__content
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: var(--spacing-3);
+    }
+
+
+    h1
+    {
+        font-size: var(--font-xxl);
+        margin-bottom: var(--spacing-2);
+    }
+
+    p
+    {
+        font-size: var(--font-lg);
+        color: var(--color-text-muted);
+    }
+}
+
+@keyframes pulsate
+{
+    0%
+    {
+        box-shadow: 0 0 .1rem #fff,
+            0 0 .1rem #fff,
+            0 0 1rem var(--color-primary-shadow),
+            0 0 0.4rem var(--color-primary-shadow),
+            0 0 1.4rem var(--color-primary-shadow),
+            inset 0 0 0.6rem var(--color-primary-shadow);
+    }
+
+    100%
+    {
+        box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem var(--color-primary-shadow),
+            0 0 0.8rem var(--color-primary-shadow),
+            0 0 2.8rem var(--color-primary-shadow),
+            inset 0 0 1.3rem var(--color-primary-shadow);
+    }
+}

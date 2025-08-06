@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 import './App.scss'
-import Navbar from 'components/navbar'
+import Navbar from 'components/navbar/navbar'
+import ParticlesBackground from 'components/particleBackground/particlesBackground';
+import HeroSection from 'components/heroSection/heroSection';
+
 
 function App() {
   const [isScrollToTopVisible, setScrollToTopVisible] = useState(false)
@@ -27,22 +30,25 @@ function App() {
 
 
   return (
-    <div className="app">
-      <Navbar />
+    <>
+      <ParticlesBackground />
 
-      <main className="mainContent">
+      <div className="app">
+        <Navbar />
 
-      </main>
+        <main className="mainContent">
+          <HeroSection />
+        </main>
 
-      {/* Scroll to Top Button */}
-      <button
-        className={`scrollToTop ${isScrollToTopVisible ? 'visible' : ''}`}
-        onClick={scrollToTop}
-        aria-label="Scroll to top"
-      >
-        ↑
-      </button>
-    </div>
+        <button
+          className={`scrollToTop ${isScrollToTopVisible ? 'visible' : ''}`}
+          onClick={scrollToTop}
+          aria-label="Scroll to top"
+        >
+          ↑
+        </button>
+      </div>
+    </>
   )
 }
 

@@ -18,7 +18,11 @@
     --size-4xl: 8rem;
     --size-5xl: 10rem;
 
+    --navbar-height: 17rem;
+
+
     /* Container max-widths */
+    --container-xs: 320px;
     --container-sm: 640px;
     --container-md: 768px;
     --container-lg: 1024px;
@@ -27,6 +31,7 @@
     --container-full: 100%;
 
     /* Z-index values */
+    --z-index-base: 0;
     --z-dropdown: 1000;
     --z-sticky: 1020;
     --z-fixed: 1030;

@@ -5,10 +5,9 @@
     top: 0;
     left: 0;
     right: 0;
-    background: var(--color-nav-bg-light);
     backdrop-filter: blur(var(--spacing-xs));
-    z-index: var(--z-fixed);
     transition: all 0.3s ease;
+    max-height: var(--navbar-height);
 
 }
 
@@ -18,9 +17,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
     width: 100%;
-    padding: var(--spacing-1) var(--spacing-1);
-    background-color: var(--color-primary);
 
     @media (min-width: 1200px)
     {
@@ -62,8 +60,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-primary);
-    padding: var(--spacing-1);
+    padding: var(--spacing-xs);
 
     &__img
     {

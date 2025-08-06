@@ -1,7 +1,7 @@
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './navbar.scss';
-import AnimatedIconLink from './navbar/animatedIconLink';
+import AnimatedIconLink from './components/animatedIconLink';
 
 const NAV_ITEMS = [
     { href: 'https://www.linkedin.com/in/dani-domenech-moreno-05aa011a8', icon: faLinkedin, label: 'LinkedIn' },
