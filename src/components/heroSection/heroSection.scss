@@ -8,7 +8,7 @@
     @media (max-width: 768px)
     {
         width: 100%;
-        height: var(--container-sm);
+        height: var(--container-md);
 
     }
 
@@ -74,7 +74,7 @@
             align-items: center;
             justify-content: center;
             padding: 0 var(--spacing-1);
-            margin-top: var(--spacing-5);
+            margin-top: var(--spacing-3);
         }
 
     }
@@ -101,7 +101,7 @@
 
         @media (max-width: 768px)
         {
-            font-size: var(--font-xl);
+            font-size: var(--font-6xl);
             margin-bottom: var(--spacing-1);
         }
     }
@@ -109,11 +109,10 @@
     h2
     {
         margin-bottom: var(--spacing-1);
-        font-size: var(--font-4xl);
+        font-size: var(--font-5xl);
 
         @media (max-width: 768px)
         {
-            font-size: var(--font-4xl);
             line-height: 1.2;
         }
     }

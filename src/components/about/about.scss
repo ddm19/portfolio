@@ -1,7 +1,7 @@
 .about
 {
     width: 70%;
-    height: var(--container-xl);
+    height: fit-content;
     text-align: center;
     padding: var(--spacing-2);
 
@@ -20,11 +20,50 @@
         }
     }
 
+    &__subtitle
+    {
+        color: var(--color-text-muted);
+        text-shadow: 0 0 1rem var(--color-text-muted);
+
+        @media (max-width: 768px)
+        {
+            width: 100%;
+            font-size: var(--font-lg);
+        }
+    }
+
     &__description
     {
         color: var(--color-text-muted);
         text-shadow: 0 0 1rem var(--color-black);
         font-size: var(--font-2xl);
+
+        @media (max-width: 768px)
+        {
+            width: 100%;
+            font-size: var(--font-xl);
+        }
+    }
+
+    &__list
+    {
+        list-style: circle;
+        padding: 0;
+        margin: var(--spacing-2) 0;
+        text-align: left;
+        color: var(--color-text-muted);
+        font-size: var(--font-base);
+        line-height: 1.6;
+
+        @media (max-width: 768px)
+        {
+            width: 90%;
+            margin: 0 auto;
+            font-size: var(--font-sm);
+            line-height: 2;
+        }
+
+
     }
 
     &--highlight
@@ -52,5 +91,64 @@
         padding: 0 var(--spacing-1);
 
     }
+
+    @media (max-width: 768px)
+    {
+        width: 100%;
+        height: auto;
+        padding: var(--spacing-1);
+    }
+
+
+
+    &__workExperienceContainer
+    {
+        position: relative;
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2);
+        width: 70%;
+        margin-top: var(--spacing-2);
+
+        @media (max-width: 768px)
+        {
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
+
+        &>*:nth-child(odd)
+        {
+            justify-self: flex-end;
+        }
+
+    }
+
+    &__timeLine
+    {
+        position: absolute;
+        border-radius: var(--radius-full);
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 3px;
+        height: 100%;
+        background-color: var(--color-text-light);
+        margin: 0 auto;
+    }
+
+    &__card
+    {
+        width: 45%;
+
+        &:nth-child(even)
+        {
+            .about__timeLineIcon
+            {
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+
 
 }
