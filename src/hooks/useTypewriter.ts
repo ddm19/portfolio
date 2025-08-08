@@ -15,6 +15,12 @@ export function useTypewriter(
     const current = words[wordIndex % words.length];
     const isFinished = !isDeleting && text === current;
     const isEmpty = isDeleting && text === '';
+    const isMobile = window.innerWidth <= 768;
+    typingSpeed = isMobile ? typingSpeed * 0.5 : typingSpeed;
+    deletingSpeed = isMobile ? deletingSpeed * 0.5 : deletingSpeed;
+    delay = isMobile ? delay * 2.5 : delay;
+    
+    
 
     const next = () => {
       if (isFinished) {

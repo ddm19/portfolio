@@ -33,9 +33,9 @@ function App() {
 
   return (
     <>
-      <ParticlesBackground />
 
       <div className="app">
+        <ParticlesBackground />
         <Navbar />
         <Toast />
 

@@ -9,8 +9,9 @@ export default function ParticlesBackground() {
         });
     }, []);
 
-    const particlesProps = {
-
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        return null; // No particles on mobile devices
     }
 
     return (

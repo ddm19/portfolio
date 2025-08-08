@@ -90,7 +90,7 @@ const About = () => {
     return (
         <section id='about' className="about customSection">
             <div className="about__content">
-                <h1 className="about__title">Sobre Mí</h1>
+                <h2 className="about__title">Sobre Mí</h2>
                 <div className='about__contentContainer'>
                     <p className="about__description">
                         Soy desarrollador frontend apasionado por el diseño UX/UI, pero no me asusta <span className="about--highlight">mancharme las manos</span> con nada.
@@ -99,7 +99,7 @@ const About = () => {
                         <span className="about--highlight"><a className='animate__animated animate__pulse' ref={linkRef}
                             onAnimationEnd={handleAnimationEnd} href='#contact'> ¡Hablemos!</a></span>
                     </p>
-                    <h1 className="about__title">Mi Trayectoria Profesional</h1>
+                    <h2 className="about__title">Mi Trayectoria Profesional</h2>
                 </div>
             </div>
             <h2 className='about__subtitle'>Actualidad</h2>
