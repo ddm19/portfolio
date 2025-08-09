@@ -2,12 +2,40 @@ import { useRef } from 'react';
 import './about.scss';
 import CustomCard, { CustomCardProps } from 'components/card/customCard';
 import React from 'react';
+import Special from 'components/special/special';
 
 
 const About = () => {
     const linkRef = useRef<HTMLAnchorElement>(null);
 
     const experience: Array<CustomCardProps> = [
+        {
+            title: 'Co-Founder / Developer',
+            subtitle: <a href="https://bunkadojo.com">Bunka Dojo</a>,
+            date: '2025 → Actualidad',
+            description: (
+                <ul className="about__list">
+                    <li>Desarrollo de un marketplace de venta de cartas TCG.</li>
+                    <li>Implementación de un sistema de gestión de inventario y pedidos.</li>
+                    <li>Diseño y desarrollo de un panel de administración para la gestión de contenido.</li>
+                    <li>Integración de pasarelas de pago y sistemas de seguridad.</li>
+                    <li>Optimización y posicionamiento SEO del sitio web.</li>
+                </ul>
+            ),
+        },
+        {
+            title: 'Game Designer / Developer',
+            subtitle: 'Mermelada Jam',
+            date: '2025',
+            technologies: ['Godot', 'C#', 'Game Design'],
+            description: (
+                <ul className="about__list">
+                    <li>Diseño y desarrollo de un juego generativo</li>
+                    <li>Balance e implementación de animaciones y efectos especiales</li>
+                    <li>Elaboración de sistemas escalables y reutilizables</li>
+                </ul>
+            ),
+        },
         {
             title: 'Team Lead / Frontend',
             subtitle: 'IniRed',
@@ -24,7 +52,7 @@ const About = () => {
         },
         {
             title: 'Game Developer (Jam)',
-            subtitle: 'Jam Alicante',
+            subtitle: 'Gamejam Alicante',
             date: '2023',
             description: (
                 <ul className="about__list">
@@ -51,7 +79,8 @@ const About = () => {
         },
         {
             title: 'Olimpiadas Informáticas',
-            subtitle: 'Alicante · 2019',
+            subtitle: 'Alicante',
+            date: '2019',
             description: (
                 <ul className="about__list">
                     <li>3.º clasificado a nivel provincial; enfoque en algoritmia y resolución de problemas.</li>
@@ -62,6 +91,7 @@ const About = () => {
         {
             title: 'Técnico informático',
             subtitle: 'Academia Amir',
+            date: '2020 → 2023',
             description:
                 <ul className='about__list'>
                     <li>Soporte técnico montando clases virtuales</li>
@@ -71,6 +101,18 @@ const About = () => {
                 </ul>
 
         },
+        {
+            title: 'Técnico informático',
+            subtitle: 'Freelance',
+            date: '2016 → Actualidad',
+            description:
+                <ul className='about__list'>
+                    <li>Instalación de equipos informáticos</li>
+                    <li>Mantenimiento de equipos informáticos</li>
+                    <li>Asesoramiento técnico a clientes</li>
+                </ul>
+        }
+
 
     ];
 
@@ -89,6 +131,8 @@ const About = () => {
 
     return (
         <section id='about' className="about customSection">
+            <Special />
+
             <div className="about__content">
                 <h2 className="about__title">Sobre Mí</h2>
                 <div className='about__contentContainer'>
@@ -110,7 +154,6 @@ const About = () => {
                 {experience.map((experienceItem, index) => (
                     <React.Fragment key={index}>
                         <CustomCard key={index} {...experienceItem} className='about__card' >
-
                         </CustomCard>
                     </React.Fragment>
                 ))}

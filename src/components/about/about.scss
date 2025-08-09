@@ -7,12 +7,8 @@
 
     &__title
     {
-        text-shadow: var(--color-black) 0 0 10px;
-        color: var(--color-text-light);
-        font-weight: bold;
+
         margin-bottom: var(--spacing-1);
-        text-decoration: underline solid var(--color-text-light) 2px;
-        text-underline-offset: 0.5rem;
 
         @media (max-width: 768px)
         {

@@ -213,6 +213,9 @@ h2
 {
   margin-bottom: var(--spacing-1);
   font-size: var(--font-5xl);
+  text-shadow: var(--color-black) 0 0 10px;
+  color: var(--color-text-light);
+  font-weight: bold;
 
   @media (max-width: 768px)
   {

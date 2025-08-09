@@ -5,31 +5,10 @@ import ParticlesBackground from 'components/particleBackground/particlesBackgrou
 import HeroSection from 'components/heroSection/heroSection';
 import Toast from 'components/toast/toast';
 import About from 'components/about/about';
+import ScrollToTop from 'components/scrollToTop/scrollToTop';
 
 
 function App() {
-  const [isScrollToTopVisible, setScrollToTopVisible] = useState(false)
-
-  useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setScrollToTopVisible(true)
-      } else {
-        setScrollToTopVisible(false)
-      }
-    }
-
-    window.addEventListener('scroll', toggleVisibility)
-    return () => window.removeEventListener('scroll', toggleVisibility)
-  }, [])
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  }
-
 
   return (
     <>
@@ -52,13 +31,7 @@ function App() {
           <About />
         </main>
 
-        <button
-          className={`scrollToTop ${isScrollToTopVisible ? 'visible' : ''}`}
-          onClick={scrollToTop}
-          aria-label="Scroll to top"
-        >
-          ↑
-        </button>
+        <ScrollToTop />
       </div>
     </>
   )

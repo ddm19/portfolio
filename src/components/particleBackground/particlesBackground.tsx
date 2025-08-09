@@ -11,7 +11,7 @@ export default function ParticlesBackground() {
 
     const isMobile = window.innerWidth <= 768;
     if (isMobile) {
-        return null; // No particles on mobile devices
+        return null;
     }
 
     return (
@@ -37,7 +37,7 @@ export default function ParticlesBackground() {
                     },
                 },
                 particles: {
-                    number: { value: 30, density: { enable: true } },
+                    number: { value: 30, density: { enable: false } },
                     shape: {
                         type: 'image',
                         options: {

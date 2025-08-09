@@ -1,9 +1,11 @@
 import React from 'react';
 import './customCard.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 export interface CustomCardProps {
     title: string;
-    subtitle?: string;
+    subtitle?: string | React.ReactNode;
     description: string | React.ReactNode;
     imageUrl?: string;
     date?: string;
@@ -29,7 +31,7 @@ const CustomCard = (props: CustomCardProps) => {
                 </div>
             )}
 
-            {date && <p className="card__date">{date}</p>}
+            {date && <p className="card__date"><FontAwesomeIcon icon={faCalendar} /> {date}</p>}
 
             {technologies && (
                 <ul className="card__technologies">

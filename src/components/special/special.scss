@@ -1,0 +1,61 @@
+.specialContainer
+{
+    width: 100%;
+
+    &__cards
+    {
+        margin: var(--spacing-2-5) auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-1);
+
+        @media (max-width: 768px)
+        {
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-1);
+        }
+
+        .card
+        {
+            max-width: var(--container-xs);
+            padding-top: var(--spacing-1);
+
+            @media (max-width: 768px)
+            {
+                width: 80%;
+                padding: var(--spacing-1);
+                margin: 0 auto;
+
+            }
+        }
+    }
+
+    &__description
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+
+        svg
+        {
+            width: auto;
+            max-height: var(--size-lg);
+            height: auto;
+            margin: 0 auto;
+            filter: drop-shadow(0 2px 8px var(--color-primary-shadow));
+
+            path
+            {
+                fill: none;
+                stroke: var(--color-primary-shadow);
+                stroke-width: var(--spacing-2);
+                transition: stroke 0.3s ease-in-out;
+            }
+
+        }
+
+    }
+}
