@@ -10,6 +10,7 @@ interface AnimatedIconLinkProps {
     animation?: string;
     duration?: string;
     iterationCount?: number;
+    isBlank?: boolean;
 }
 
 
@@ -20,12 +21,15 @@ const AnimatedIconLink = (props: AnimatedIconLinkProps) => {
         icon,
         label,
         className,
-        animation = 'bounce 1s infinite',
-        duration = '0.8s',
+        animation = 'bounce 0.5s infinite',
+        duration = '0.7s',
         iterationCount = 1,
+        isBlank
     } = props;
 
     const [isAnimating, setIsAnimating] = useState(false);
+
+    const isPhone = window.matchMedia("(max-width: 768px)").matches;
 
     const handleMouseEnter = useCallback(() => {
         setIsAnimating(true);
@@ -37,27 +41,32 @@ const AnimatedIconLink = (props: AnimatedIconLinkProps) => {
 
     const classes = [
         className,
-        isAnimating && `animate__animated animate__${animation}`,
+        isAnimating && !isPhone && `animate__animated animate__${animation}`,
     ].filter(Boolean).join(' ');
 
     const style = {
         animationDuration: duration,
         animationIterationCount: iterationCount,
+        color: isAnimating && !isPhone ? 'var(--color-text-highlight)' : '',
     };
 
     return (
-        <a
-            href={href}
-            className={classes}
-            style={style}
-            onMouseEnter={handleMouseEnter}
-            onAnimationEnd={handleAnimationEnd}
-            aria-label={label}
-            target="_blank"
-            rel="noreferrer"
-        >
-            <FontAwesomeIcon icon={icon} />
-        </a>
+        <span className="animatedLink">
+            {label}
+
+            <a
+                href={href}
+                className={classes}
+                style={style}
+                onMouseEnter={handleMouseEnter}
+                onAnimationEnd={handleAnimationEnd}
+                aria-label={label}
+                target={isBlank ? "_blank" : ""}
+                rel="noreferrer"
+            >
+                <FontAwesomeIcon icon={icon} />
+            </a>
+        </span>
     );
 };
 

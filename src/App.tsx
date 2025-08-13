@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faCode, faEnvelope, faLaptopCode, faUser } from '@fortawesome/free-solid-svg-icons';
 import './App.scss'
 import Navbar from 'components/navbar/navbar'
 import ParticlesBackground from 'components/particleBackground/particlesBackground';
@@ -11,12 +12,40 @@ import Projects from 'components/projects/projects';
 
 function App() {
 
+  const CONTACT_NAV_ITEMS = [
+    { href: 'https://www.linkedin.com/in/dani-domenech-moreno-05aa011a8', icon: faLinkedin },
+    { href: 'mailto:domenechmorenodaniel@gmail.com', icon: faEnvelope },
+    { href: 'https://wa.me/34653582886', icon: faWhatsapp },
+    { href: 'https://github.com/ddm19', icon: faGithub },
+  ];
+
+  const FLOATING_NAV_ITEMS = [
+    {
+      href: '#projects',
+      icon: faLaptopCode,
+      label: 'Portfolio'
+    },
+    {
+      href: '#about',
+      icon: faUser,
+      label: 'Sobre mí',
+    }
+  ];
+
   return (
     <>
 
       <div className="app">
         <ParticlesBackground />
-        <Navbar />
+
+        <div className="logo">
+          <a href='https://www.thedm.es'><img draggable="false" src="/logo.svg" alt="logo" className="logo__img" /> </a>
+          <h2 className="logo__text">
+            The<span className="logo__text--highlight">DM</span>
+          </h2>
+          <p className="logo__text--small">Dani Domenech</p>
+        </div>
+        <Navbar items={CONTACT_NAV_ITEMS} />
         <Toast />
 
         <main className="mainContent animate__animated animate__fadeIn animate__delay-1s" onAnimationEnd={e => {
@@ -34,6 +63,8 @@ function App() {
 
           <About />
         </main>
+
+        <Navbar items={FLOATING_NAV_ITEMS} isFloating={true} />
 
         <ScrollToTop />
       </div>
