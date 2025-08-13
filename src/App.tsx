@@ -13,10 +13,10 @@ import Projects from 'components/projects/projects';
 function App() {
 
   const CONTACT_NAV_ITEMS = [
-    { href: 'https://www.linkedin.com/in/dani-domenech-moreno-05aa011a8', icon: faLinkedin },
-    { href: 'mailto:domenechmorenodaniel@gmail.com', icon: faEnvelope },
-    { href: 'https://wa.me/34653582886', icon: faWhatsapp },
-    { href: 'https://github.com/ddm19', icon: faGithub },
+    { href: 'https://www.linkedin.com/in/dani-domenech-moreno-05aa011a8', icon: faLinkedin, label: 'LinkedIn' },
+    { href: 'mailto:domenechmorenodaniel@gmail.com', icon: faEnvelope, label: 'Email' },
+    { href: 'https://wa.me/34653582886', icon: faWhatsapp, label: 'WhatsApp' },
+    { href: 'https://github.com/ddm19', icon: faGithub, label: 'GitHub' },
   ];
 
   const FLOATING_NAV_ITEMS = [

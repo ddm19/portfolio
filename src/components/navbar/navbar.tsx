@@ -6,7 +6,7 @@ import AnimatedIconLink from './components/animatedIconLink';
 interface navbarItem {
     href: string;
     icon: any;
-    label?: string;
+    label: string;
 
 }
 
@@ -29,7 +29,7 @@ const Navbar = (props: navbarProps) => {
                             <AnimatedIconLink
                                 href={href}
                                 icon={icon}
-                                label={label || ''}
+                                label={label}
                                 className="navMenu__link"
                                 isBlank={!isFloating}
                             />

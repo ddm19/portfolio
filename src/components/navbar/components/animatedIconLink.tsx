@@ -21,10 +21,11 @@ const AnimatedIconLink = (props: AnimatedIconLinkProps) => {
         icon,
         label,
         className,
-        animation = 'bounce 0.5s infinite',
-        duration = '0.7s',
+        duration = '0.8s',
         iterationCount = 1,
-        isBlank
+        isBlank,
+        animation = isBlank ? 'bounce 0.5s infinite' : 'pulse 0.8s infinite',
+
     } = props;
 
     const [isAnimating, setIsAnimating] = useState(false);
@@ -51,22 +52,18 @@ const AnimatedIconLink = (props: AnimatedIconLinkProps) => {
     };
 
     return (
-        <span className="animatedLink">
-            {label}
-
-            <a
-                href={href}
-                className={classes}
-                style={style}
-                onMouseEnter={handleMouseEnter}
-                onAnimationEnd={handleAnimationEnd}
-                aria-label={label}
-                target={isBlank ? "_blank" : ""}
-                rel="noreferrer"
-            >
-                <FontAwesomeIcon icon={icon} />
-            </a>
-        </span>
+        <a
+            href={href}
+            className={classes}
+            style={style}
+            onMouseEnter={handleMouseEnter}
+            onAnimationEnd={handleAnimationEnd}
+            aria-label={label}
+            target={isBlank ? "_blank" : ""}
+            rel="noreferrer"
+        >
+            <FontAwesomeIcon icon={icon} />
+        </a>
     );
 };
 
