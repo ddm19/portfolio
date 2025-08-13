@@ -27,6 +27,14 @@
         width: 80%;
         justify-self: center;
 
+        @media (max-width: 768px)
+        {
+            grid-template-columns: 1fr;
+            padding: var(--spacing-1-5);
+            gap: var(--spacing-1);
+            width: 100%;
+        }
+
     }
 
     &__group
@@ -104,6 +112,11 @@
         resize: vertical;
         min-height: calc(var(--size-4xl));
         field-sizing: content;
+
+        @media (max-width: 768px)
+        {
+            field-sizing: fixed;
+        }
     }
 
     &__input:focus,

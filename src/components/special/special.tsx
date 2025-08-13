@@ -7,19 +7,19 @@ const Special = () => {
     const specials = [
         {
             title: 'Desarrollo Especializado',
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faBrain} /> Me centro en entender de tu proyecto para ofrecer soluciones personalizadas y efectivas.</span>,
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faBrain} className="card__icon" /> Me centro en entender de tu proyecto para ofrecer soluciones personalizadas y efectivas.</span>,
         },
         {
             title: 'Innovación Continua',
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faLightbulb} /> Siempre busco nuevas tecnologías y metodologías para mejorar la calidad y que obtengas el mejor resultado.</span>,
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faLightbulb} className="card__icon" /> Siempre busco nuevas tecnologías y metodologías para mejorar la calidad y que obtengas el mejor resultado.</span>,
         },
         {
             title: 'Colaboración Activa',
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faHandshake} /> Trabajo de la mano contigo para asegurar que el producto final cumpla con tus expectativas y necesidades.</span>,
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faHandshake} className="card__icon" /> Trabajo de la mano contigo para asegurar que el producto final cumpla con tus expectativas y necesidades.</span>,
         },
         {
             title: 'Enfoque en Resultados',
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faWrench} /> Mi objetivo es entregar un producto que no solo funcione, sino que también sea escalable y fácil de mantener.</span>,
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faWrench} className="card__icon" /> Mi objetivo es entregar un producto que no solo funcione, sino que también sea escalable y fácil de mantener.</span>,
         },
     ];
     return (

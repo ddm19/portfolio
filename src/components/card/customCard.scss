@@ -18,6 +18,24 @@
     align-items: stretch;
     justify-content: flex-start;
 
+    &__icon
+    {
+        width: auto;
+        max-height: var(--size-lg);
+        height: auto;
+        margin: 0 auto;
+        filter: drop-shadow(0 2px 8px var(--color-primary-shadow));
+
+        path
+        {
+            fill: none;
+            stroke: var(--color-primary-shadow);
+            stroke-width: var(--spacing-2);
+            transition: stroke 0.3s ease-in-out;
+        }
+
+    }
+
     &:hover
     {
         box-shadow: 0 var(--spacing-xs) var(--spacing-1) var(--color-text-light);

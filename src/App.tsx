@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faLaptopCode, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLaptopCode, faUser, faWrench } from '@fortawesome/free-solid-svg-icons';
 import './App.scss'
 import Navbar from 'components/navbar/navbar'
 import ParticlesBackground from 'components/particleBackground/particlesBackground';
@@ -9,6 +9,7 @@ import About from 'components/about/about';
 import ScrollToTop from 'components/scrollToTop/scrollToTop';
 import Projects from 'components/projects/projects';
 import Contact from 'components/contact/contact';
+import Services from 'components/services/services';
 
 
 function App() {
@@ -27,6 +28,11 @@ function App() {
       label: 'Portfolio'
     },
     {
+      href: '#services',
+      icon: faWrench,
+      label: 'Servicios',
+    },
+    {
       href: '#about',
       icon: faUser,
       label: 'Sobre mí',
@@ -35,7 +41,7 @@ function App() {
       href: '#contact',
       icon: faEnvelope,
       label: 'Contacto'
-    }
+    },
   ];
 
   return (
@@ -47,7 +53,7 @@ function App() {
         <div className="logo">
           <a href='https://www.thedm.es'><img draggable="false" src="/logo.svg" alt="logo" className="logo__img" /> </a>
           <h2 className="logo__text">
-            The<span className="logo__text--highlight">DM</span>
+            The<span className="logo__text--highlight">DM</span> | Soluciones Digitales
           </h2>
           <p className="logo__text--small">Dani Domenech</p>
         </div>
@@ -66,6 +72,7 @@ function App() {
 
           <HeroSection />
           <Projects />
+          <Services />
           <About />
           <Contact />
         </main>

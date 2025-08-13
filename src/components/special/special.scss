@@ -39,23 +39,7 @@
         align-items: center;
         gap: var(--spacing-sm);
 
-        svg
-        {
-            width: auto;
-            max-height: var(--size-lg);
-            height: auto;
-            margin: 0 auto;
-            filter: drop-shadow(0 2px 8px var(--color-primary-shadow));
 
-            path
-            {
-                fill: none;
-                stroke: var(--color-primary-shadow);
-                stroke-width: var(--spacing-2);
-                transition: stroke 0.3s ease-in-out;
-            }
-
-        }
 
     }
 }

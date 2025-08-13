@@ -1,0 +1,67 @@
+.services
+{
+    display: grid;
+    gap: var(--spacing-2);
+    width: 70%;
+
+    @media (max-width: 1200px)
+    {
+        width: 100%;
+    }
+
+    .card
+    {
+        padding: var(--spacing-2);
+    }
+
+    &__title
+    {
+        font-size: var(--font-4xl);
+        color: var(--color-white);
+    }
+
+    &__subtitle
+    {
+        color: var(--color-gray-300);
+        font-size: var(--font-lg);
+    }
+
+    &__grid
+    {
+        display: grid;
+        gap: var(--spacing-2);
+        grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width: 768px)
+        {
+            gap: 0;
+        }
+
+
+    }
+
+    @media (max-width: 1200px)
+    {
+        &__grid
+        {
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-1);
+        }
+    }
+
+    @media (max-width: 900px)
+    {
+        &__grid
+        {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px)
+    {
+        &__grid
+        {
+            grid-template-columns: 1fr;
+        }
+    }
+}

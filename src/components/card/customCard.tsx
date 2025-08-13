@@ -1,28 +1,27 @@
 import React from 'react';
 import './customCard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faExternalLink } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import TechnologyList from './components/technologyList';
 
 export interface CustomCardProps {
-    title: string;
+    title: string | React.ReactNode;
     subtitle?: string | React.ReactNode;
     description: string | React.ReactNode;
     imageUrl?: string;
     date?: string;
     technologies?: string[] | React.ReactNode[];
     links?: React.ReactNode[];
-    onClick?: () => void;
     className?: string;
     children?: React.ReactNode;
+    key?: string | number;
 }
 
 const CustomCard = (props: CustomCardProps) => {
-    const { title, description, imageUrl, links, onClick, className, date, technologies, children, subtitle } = props;
+    const { title, description, imageUrl, links, className, date, technologies, children, subtitle, key } = props;
     return (
-        <div className={`card ${className ?? ''}`}>
-            {imageUrl && <img src={imageUrl} alt={title} className="card__image" />}
+        <div className={`card ${className ?? ''}`} key={key}>
+            {imageUrl && <img src={imageUrl} alt={typeof title === 'string' ? title : ''} className="card__image" />}
 
             <h2 className="card__title">{title}</h2>
             {subtitle && <h3 className="card__subtitle">{subtitle}</h3>}
