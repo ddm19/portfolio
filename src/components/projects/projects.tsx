@@ -4,7 +4,7 @@ import Carousel from 'components/carousel/carousel';
 import TechnologyList from 'components/card/components/technologyList';
 import { projects, technologies } from './constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faContactCard, faExternalLink, faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { faContactCard, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Projects = () => {
@@ -27,7 +27,7 @@ const Projects = () => {
                 ))} autoPlayDefault={false} interval={3000} itemsPerPage={3} autoPlayDelay={5000} />
             </div>
             <h2>Te gusta lo que ves?</h2>
-            <p>Este es mi stack principal</p>
+            <p className='projects__stack'>Este es mi stack principal</p>
             <TechnologyList technologies={technologies} />
             <h2>Hablemos!</h2>
             <div className="projects__buttons">
