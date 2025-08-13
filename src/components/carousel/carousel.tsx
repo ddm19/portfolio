@@ -22,7 +22,10 @@ const Carousel: React.FC<CarouselProps> = ({
 }) => {
     const [index, setIndex] = useState(0);
     const timerRef = useRef<number | null>(null);
-
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    if (isMobile) {
+        itemsPerPage = 1;
+    }
     const pages = useMemo(() => {
         const chunk: React.ReactNode[][] = [];
         for (let i = 0; i < items.length; i += itemsPerPage) {

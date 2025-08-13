@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faEnvelope, faLaptopCode, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLaptopCode, faUser } from '@fortawesome/free-solid-svg-icons';
 import './App.scss'
 import Navbar from 'components/navbar/navbar'
 import ParticlesBackground from 'components/particleBackground/particlesBackground';

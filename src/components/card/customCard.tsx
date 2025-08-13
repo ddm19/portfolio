@@ -3,6 +3,7 @@ import './customCard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faExternalLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import TechnologyList from './components/technologyList';
 
 export interface CustomCardProps {
     title: string;
@@ -34,16 +35,7 @@ const CustomCard = (props: CustomCardProps) => {
 
             {date && <p className="card__date"><FontAwesomeIcon icon={faCalendar} /> {date}</p>}
 
-            {technologies && (
-                <ul className="card__technologies">
-                    {technologies.map((tech, index) => (
-                        <li key={index} className="card__technology">
-                            {tech}
-                        </li>
-                    ))}
-                </ul>
-            )}
-
+            <TechnologyList technologies={technologies || []} />
 
             <div className="card__links">
                 {links && links.map((link, index) => (

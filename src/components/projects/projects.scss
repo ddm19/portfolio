@@ -103,4 +103,29 @@
 
 
     }
+
+    &__buttons
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: var(--spacing-2);
+        margin: var(--spacing-2);
+        max-width: 100%;
+        width: max-content;
+        justify-self: center;
+
+
+
+        @media (max-width: 768px)
+        {
+            grid-template-columns: 1fr;
+        }
+
+        a
+        {
+            width: fit-content;
+        }
+    }
 }
