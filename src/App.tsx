@@ -8,6 +8,7 @@ import Toast from 'components/toast/toast';
 import About from 'components/about/about';
 import ScrollToTop from 'components/scrollToTop/scrollToTop';
 import Projects from 'components/projects/projects';
+import Contact from 'components/contact/contact';
 
 
 function App() {
@@ -29,6 +30,11 @@ function App() {
       href: '#about',
       icon: faUser,
       label: 'Sobre mí',
+    },
+    {
+      href: '#contact',
+      icon: faEnvelope,
+      label: 'Contacto'
     }
   ];
 
@@ -60,8 +66,8 @@ function App() {
 
           <HeroSection />
           <Projects />
-
           <About />
+          <Contact />
         </main>
 
         <Navbar items={FLOATING_NAV_ITEMS} isFloating={true} />
