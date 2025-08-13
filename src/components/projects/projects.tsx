@@ -1,8 +1,9 @@
 import './projects.scss';
 import CustomCard from "components/card/customCard";
-import { faBolt, faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import { faBolt, faCube, faExternalLink, faICursor, faM, faV } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faHtml5, faReact, faSass, faStripe } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faHtml5, faNodeJs, faReact, faSass, faStripe } from "@fortawesome/free-brands-svg-icons";
+import Carousel from 'components/carousel/carousel';
 
 const Projects = () => {
 
@@ -26,8 +27,13 @@ const Projects = () => {
             ],
             image: "/bunkaDojo.png",
             alt: "Bunka Dojo",
-            technologies: [<span><FontAwesomeIcon icon={faHtml5} /> HTML5</span>, <span><FontAwesomeIcon icon={faReact} /> React</span>, "TypeScript", <span><FontAwesomeIcon icon={faStripe} /> Stripe</span>,
-            <span><FontAwesomeIcon icon={faBolt} /> Supabase</span>, <span><FontAwesomeIcon icon={faSass} /> Sass</span>]
+            technologies: [
+                <span><FontAwesomeIcon icon={faHtml5} /> HTML5</span>,
+                <span><FontAwesomeIcon icon={faReact} /> React</span>,
+                "TypeScript",
+                <span><FontAwesomeIcon icon={faStripe} /> Stripe</span>,
+                <span><FontAwesomeIcon icon={faBolt} /> Supabase</span>,
+                <span><FontAwesomeIcon icon={faSass} /> Sass</span>]
         },
         {
             title: "Food Contest",
@@ -47,24 +53,70 @@ const Projects = () => {
             ],
             image: "/foodContest.png",
             alt: "Food Contest",
-            technologies: [<span><FontAwesomeIcon icon={faReact} /> React</span>, "TypeScript", <span><FontAwesomeIcon icon={faSass} /> Sass</span>]
+            technologies: [
+                <span><FontAwesomeIcon icon={faReact} /> React</span>,
+                "TypeScript",
+                <span><FontAwesomeIcon icon={faSass} /> Sass</span>,
+                <span><FontAwesomeIcon icon={faV} /> Vite</span>,
+                <span><FontAwesomeIcon icon={faV} /> Vercel</span>
+
+            ]
         },
         {
-            title: "Project Three",
-            description: "This is a description of project three.",
-            href: "https://example.com/project-three",
-            image: "https://picsum.photos/200/300",
-            alt: "Project Three Image",
-            technologies: ["React", "TypeScript", "CSS"]
+            title: "Aqivap",
+            description: "Maqueta de una tienda online de vapeo.",
+            href: "https://aqivap.vercel.app",
+            links: [
+                <a href="https://aqivap.vercel.app" className="card__link" target="_blank" >
+                    <button className="card__button">
+                        Demo <FontAwesomeIcon icon={faExternalLink} />
+                    </button>
+                </a>,
+                <a href="https://github.com/ddm19/Aqivap" className="card__link" target="_blank" >
+                    <button className="card__button">
+                        Código <FontAwesomeIcon icon={faGithub} />
+                    </button>
+                </a>
+            ],
+            image: "/aqivap.png",
+            alt: "Aqivap",
+            technologies: [<span><FontAwesomeIcon icon={faReact} /> React</span>, "TypeScript", <span><FontAwesomeIcon icon={faSass} /> Sass</span>, <span><FontAwesomeIcon icon={faHtml5} /> HTML5</span>,
+            <span><FontAwesomeIcon icon={faCube} /> Cursor AI</span>,
+            <span><FontAwesomeIcon icon={faV} /> Vite</span>
+            ]
         },
         {
-            title: "Project Four",
-            description: "This is a description of project four.",
-            href: "https://example.com/project-four",
-            image: "https://picsum.photos/200/300",
-            alt: "Project Four Image",
-            technologies: ["React", "TypeScript", "CSS"]
+            title: "Hispania",
+            description: "Página web / Blog de juegos de Rol y D&D.",
+            href: "https://hispania.thedm.es",
+            links: [
+                <a href="https://hispania.thedm.es" className="card__link" target="_blank" >
+                    <button className="card__button">
+                        Demo <FontAwesomeIcon icon={faExternalLink} />
+                    </button>
+                </a>,
+                <a href="https://github.com/ddm19/rol" className="card__link" target="_blank" >
+                    <button className="card__button">
+                        Código <FontAwesomeIcon icon={faGithub} />
+                    </button>
+                </a>
+            ],
+            image: "/hispania.png",
+            alt: "Food Contest",
+            technologies: [
+                <span><FontAwesomeIcon icon={faHtml5} /> HTML5</span>,
+                <span><FontAwesomeIcon icon={faReact} /> React</span>,
+                "TypeScript",
+                <span><FontAwesomeIcon icon={faStripe} /> Stripe</span>,
+                <span><FontAwesomeIcon icon={faNodeJs} /> Node.js</span>,
+                <span><FontAwesomeIcon icon={faSass} /> Sass</span>,
+                <span><FontAwesomeIcon icon={faV} /> Vercel</span>,
+                <span><FontAwesomeIcon icon={faV} /> Vite</span>,
+                <span><FontAwesomeIcon icon={faM} /> Mui</span>
+
+            ]
         }
+
     ]
     return (
         <section className="projects customSection" id="projects">
@@ -72,7 +124,16 @@ const Projects = () => {
 
             <div className="projects__content">
 
+                <Carousel items={projects.map((project) => (
+                    <CustomCard
+                        title={project.title}
+                        description={project.description}
+                        imageUrl={project.image}
+                        links={project.links}
+                        technologies={project.technologies}
+                    />
 
+                ))} autoPlayDefault={false} interval={3000} itemsPerPage={3} autoPlayDelay={5000} />
             </div>
         </section>
     );

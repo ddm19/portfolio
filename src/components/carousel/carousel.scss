@@ -1,0 +1,150 @@
+.carousel
+{
+    --items: var(--carousel-items-per-page, 3);
+    position: relative;
+    width: 100%;
+    user-select: none;
+
+    .card
+    {
+        padding: var(--spacing-3);
+
+        @media (max-width: 768px)
+        {
+            padding: var(--spacing-1);
+        }
+    }
+}
+
+.carousel__viewport
+{
+    overflow: hidden;
+    width: 80%;
+    justify-self: center;
+}
+
+.carousel__track
+{
+    display: flex;
+    width: 100%;
+    transition: transform 400ms ease;
+}
+
+.carousel__slide
+{
+    min-width: 100%;
+    display: flex;
+    gap: var(--spacing-2);
+    padding: var(--spacing-1) 0;
+    box-sizing: border-box;
+}
+
+.carousel__item
+{
+    flex: 1 1 calc(100% / var(--items));
+    max-width: calc(100% / var(--items));
+    display: flex;
+}
+
+.carousel__control
+{
+    position: absolute;
+    top: 50%;
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    border-radius: var(--radius-full);
+    border: 1px solid var(--color-text-light);
+    background: var(--color-primary);
+    color: var(--color-white);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.2s ease;
+    justify-content: center;
+
+    @media (max-width: 768px)
+    {
+
+        height: var(--size-lg);
+        width: var(--size-lg);
+        padding: 0;
+    }
+
+}
+
+.carousel__control:disabled
+{
+    opacity: 0.4;
+    cursor: default;
+}
+
+.carousel__control--prev
+{
+    left: var(--spacing-2);
+
+    @media (max-width: 768px)
+    {
+        left: 0;
+    }
+}
+
+.carousel__control--next
+{
+    right: var(--spacing-2);
+
+    @media (max-width: 768px)
+    {
+        right: 0;
+    }
+}
+
+.carousel__dots
+{
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    margin: var(--spacing-2);
+
+    @media (max-width: 768px)
+    {
+        margin: var(--spacing-1);
+        gap: var(--spacing-xs);
+    }
+}
+
+.carousel__dot
+{
+    width: var(--size-xs);
+    height: var(--size-sm);
+    border-radius: var(--radius-full);
+    border: 1px solid var(--color-text-light);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    @media (max-width: 768px)
+    {
+        width: var(--size-xs);
+        height: var(--size-xs);
+        border: 1px solid var(--color-text-light);
+    }
+}
+
+.carousel__dot.is-active
+{
+    background: var(--color-text-light);
+}
+
+@media (max-width: 768px)
+{
+    .carousel
+    {
+        --items: 1;
+    }
+
+    .carousel__slide
+    {
+        gap: var(--spacing-1);
+    }
+}

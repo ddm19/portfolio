@@ -1,5 +1,13 @@
 .projects
 {
+    width: 80%;
+    padding: 0;
+
+    @media (max-width: 768px)
+    {
+        padding: 0 var(--spacing-1);
+        width: 95%;
+    }
 
     &__toggle
     {
