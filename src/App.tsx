@@ -6,6 +6,7 @@ import HeroSection from 'components/heroSection/heroSection';
 import Toast from 'components/toast/toast';
 import About from 'components/about/about';
 import ScrollToTop from 'components/scrollToTop/scrollToTop';
+import Projects from 'components/projects/projects';
 
 
 function App() {
@@ -27,7 +28,10 @@ function App() {
             );
           }
         }}>
+
           <HeroSection />
+          <Projects />
+
           <About />
         </main>
 

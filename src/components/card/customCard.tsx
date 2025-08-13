@@ -1,7 +1,8 @@
 import React from 'react';
 import './customCard.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faExternalLink } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export interface CustomCardProps {
     title: string;
@@ -9,15 +10,15 @@ export interface CustomCardProps {
     description: string | React.ReactNode;
     imageUrl?: string;
     date?: string;
-    technologies?: string[];
-    link?: string;
+    technologies?: string[] | React.ReactNode[];
+    links?: React.ReactNode[];
     onClick?: () => void;
     className?: string;
     children?: React.ReactNode;
 }
 
 const CustomCard = (props: CustomCardProps) => {
-    const { title, description, imageUrl, link, onClick, className, date, technologies, children, subtitle } = props;
+    const { title, description, imageUrl, links, onClick, className, date, technologies, children, subtitle } = props;
     return (
         <div className={`card ${className ?? ''}`}>
             {imageUrl && <img src={imageUrl} alt={title} className="card__image" />}
@@ -35,23 +36,22 @@ const CustomCard = (props: CustomCardProps) => {
 
             {technologies && (
                 <ul className="card__technologies">
-                    {technologies.map((tech) => (
-                        <li key={tech} className="card__technology">
+                    {technologies.map((tech, index) => (
+                        <li key={index} className="card__technology">
                             {tech}
                         </li>
                     ))}
                 </ul>
             )}
 
-            {link ? (
-                <a href={link} className="card__link" onClick={onClick}>
-                    Ver más
-                </a>
-            ) : onClick ? (
-                <button className="card__button" onClick={onClick}>
-                    Acción
-                </button>
-            ) : null}
+
+            <div className="card__links">
+                {links && links.map((link, index) => (
+                    <div key={index} className="card__links">
+                        {link}
+                    </div>
+                ))}
+            </div>
 
             {children}
         </div>

@@ -21,13 +21,13 @@
         {
             max-width: var(--container-xs);
             padding-top: var(--spacing-1);
+            height: var(--container-xs);
 
             @media (max-width: 768px)
             {
                 width: 80%;
                 padding: var(--spacing-1);
                 margin: 0 auto;
-
             }
         }
     }

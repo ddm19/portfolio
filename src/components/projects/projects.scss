@@ -1,0 +1,98 @@
+.projects
+{
+
+    &__toggle
+    {
+        display: inline-block;
+        position: absolute;
+        top: var(--spacing-1);
+        right: var(--spacing-1);
+        padding-left: calc(var(--spacing-3) + var(--spacing-1));
+        cursor: pointer;
+        user-select: none;
+        color: var(--color-text-dark);
+
+        &:hover
+        {
+            color: var(--color-text-light);
+        }
+
+        &[data-active="true"]
+        {
+            color: var(--color-bg-success);
+            font-weight: bold;
+
+        }
+
+        &[data-active="false"]
+        {
+            color: var(--color-gray-100);
+            font-weight: normal;
+        }
+
+        input
+        {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+
+            &:checked~.projects__checkmark
+            {
+                background-color: var(--color-bg-success);
+
+
+                &:after
+                {
+                    left: calc(var(--spacing-1-5) + var(--spacing-xs));
+                }
+            }
+        }
+
+
+        &:hover
+        {
+            input~.projects__checkmark
+            {
+                background-color: var(--color-primary);
+
+            }
+
+            input:checked~.projects__checkmark
+            {
+                background-color: var(--color-bg-success);
+            }
+        }
+
+        .projects__checkmark
+        {
+            position: absolute;
+            top: 1px;
+            left: 0;
+            height: var(--size-md);
+            width: var(--size-xl);
+            background-color: var(--color-gray-900);
+            transition: background-color 0.25s ease;
+            border-radius: calc(var(--spacing-1) + var(--spacing-xs) / 2);
+
+
+            &:after
+            {
+                content: "";
+                position: absolute;
+                left: var(--spacing-xs);
+                top: var(--spacing-xs);
+                width: var(--spacing-1);
+                height: var(--spacing-1);
+                display: block;
+                background-color: var(--color-primary-shadow);
+                border-radius: var(--radius-full);
+                transition: left 0.25s ease;
+            }
+        }
+
+
+    }
+}

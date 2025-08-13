@@ -72,6 +72,10 @@ body
   border: 1px solid var(--color-text-light);
   animation: pulsate 1s infinite alternate;
   border-radius: var(--radius-lg);
+  width: 70%;
+  height: fit-content;
+  text-align: center;
+  padding: var(--spacing-2);
 
 }
 

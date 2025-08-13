@@ -5,9 +5,18 @@
     border-radius: var(--radius-lg);
     padding: var(--spacing-4) var(--spacing-2) var(--spacing-xs) var(--spacing-2);
     color: var(--color-gray-50);
-    box-shadow: 0 var(--spacing-xs) var(--spacing-1) var(--color-text-light);
+    box-shadow: 0 var(--spacing-xs) var(--spacing-1) var(--color-text-dark);
     overflow: hidden;
     border: 1px solid var(--color-text-light);
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover
+    {
+        box-shadow: 0 var(--spacing-xs) var(--spacing-1) var(--color-text-light);
+    }
 
     @media (max-width: 768px)
     {
@@ -49,9 +58,17 @@
     {
         width: 100%;
         height: auto;
+        max-height: var(--container-sm);
         border-radius: var(--radius-md);
         margin-bottom: var(--spacing-2);
         object-fit: cover;
+    }
+
+    &__links
+    {
+        display: flex;
+        gap: var(--spacing-2);
+        justify-content: center;
     }
 
     &__title
