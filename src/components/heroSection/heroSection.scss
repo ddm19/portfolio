@@ -14,11 +14,12 @@
     &__buttonContainer
     {
         display: flex;
-
         justify-content: center;
         align-items: center;
         gap: var(--spacing-2);
         margin-top: var(--spacing-3);
+        justify-self: center;
+
     }
 
     &__title

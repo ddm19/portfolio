@@ -21,6 +21,8 @@ function App() {
     { href: 'https://github.com/ddm19', icon: faGithub, label: 'GitHub' },
   ];
 
+  const isMobile = window.innerWidth <= 768;
+
   const FLOATING_NAV_ITEMS = [
     {
       href: '#projects',
@@ -53,7 +55,8 @@ function App() {
         <div className="logo">
           <a href='https://www.thedm.es'><img draggable="false" src="/logo.svg" alt="logo" className="logo__img" /> </a>
           <h2 className="logo__text">
-            The<span className="logo__text--highlight">DM</span> | Soluciones Digitales
+            <span>The<span className="logo__text--highlight">DM</span></span>
+            <span> {!isMobile && '|'} Soluciones Digitales </span>
           </h2>
           <p className="logo__text--small">Dani Domenech</p>
         </div>

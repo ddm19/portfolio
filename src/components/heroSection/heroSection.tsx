@@ -35,7 +35,7 @@ const HeroSection = () => {
                             </a>
                         </button>
                         <button onClick={handleCopyEmail}>
-                            Copia mi Email
+                            Copiar Email
                         </button>
                     </div>
                 </div>

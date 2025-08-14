@@ -124,6 +124,13 @@
     {
         font-size: var(--font-3xl);
         color: var(--color-text-light);
+        text-align: center;
+
+        @media (max-width: 768px)
+        {
+            display: flex;
+            flex-direction: column;
+        }
 
         &--highlight
         {
