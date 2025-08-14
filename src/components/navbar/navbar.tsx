@@ -7,6 +7,7 @@ interface navbarItem {
     href: string;
     icon: any;
     label: string;
+    title?: string;
 
 }
 
@@ -24,7 +25,7 @@ const Navbar = (props: navbarProps) => {
         <nav className={`nav animate__animated animate__slideInDown ${isFloating ? 'nav--floating' : ''}`}>
             <div className="navContainer">
                 <ul className="navMenu">
-                    {items.map(({ href, icon, label }) => (
+                    {items.map(({ href, icon, label, title }) => (
                         <li key={label} className="navMenu__item animate__animated animate__backInDown">
                             <AnimatedIconLink
                                 href={href}
@@ -33,6 +34,7 @@ const Navbar = (props: navbarProps) => {
                                 className="navMenu__link"
                                 isBlank={!isFloating}
                             />
+                            <span className="navMenu__title">{title}</span>
                         </li>
                     ))}
                 </ul>

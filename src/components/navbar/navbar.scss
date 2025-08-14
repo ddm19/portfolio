@@ -84,6 +84,7 @@
     padding: 0 var(--spacing-1);
     background-color: var(--shadow-deep);
     border-radius: var(--radius-md);
+    border: 1px solid var(--color-text-light);
 
     @media (min-width: 1200px)
     {
@@ -93,6 +94,9 @@
     &__item
     {
         animation-delay: 0.4s;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
         a
         {
@@ -103,6 +107,13 @@
 
         }
 
+    }
+
+    &__title
+    {
+        font-size: var(--font-sm);
+        color: var(--color-text-muted);
+        text-align: center;
     }
 }
 

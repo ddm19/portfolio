@@ -27,22 +27,26 @@ function App() {
     {
       href: '#projects',
       icon: faLaptopCode,
-      label: 'Portfolio'
+      label: 'Portfolio',
+      title: 'Proyectos'
     },
     {
       href: '#services',
       icon: faWrench,
       label: 'Servicios',
+      title: 'Servicios'
     },
     {
       href: '#about',
       icon: faUser,
       label: 'Sobre mí',
+      title: 'Sobre mí'
     },
     {
       href: '#contact',
       icon: faEnvelope,
-      label: 'Contacto'
+      label: 'Contacto',
+      title: 'Contacto'
     },
   ];
 

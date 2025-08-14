@@ -122,10 +122,10 @@ button:hover
 .scrollToTop
 {
   position: fixed;
-  bottom: var(--spacing-1);
-  right: var(--spacing-1);
+  bottom: var(--spacing-3);
+  right: var(--spacing-3);
   background-color: var(--color-primary);
-  color: var(--color-text-light);
+  color: var(--color-text-muted);
   border: none;
   width: var(--size-xl);
   height: var(--size-xl);
@@ -149,6 +149,8 @@ button:hover
     width: var(--radius-sm);
     height: var(--size-sm);
     font-size: var(--font-sm);
+    bottom: var(--spacing-6);
+    right: var(--spacing-1);
 
   }
 }
