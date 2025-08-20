@@ -2,14 +2,17 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="icon" href="/favicon.ico" />
+    <!-- Preconnect and preload for Animate.css to eliminate render-blocking -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </noscript>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>TheDM | Soluciones Digitales - Desarrollo Web en Alicante</title>
-        <meta name="description" content="Servicios de desarrollo web, aplicaciones y automatizaciones desde Alicante, España. Software fiable y a medida para empresas y profesionales que buscan crecer en línea." />
+  <title>TheDM | Soluciones Digitales - Desarrollo Web en Alicante | Desarrollo Web para Clientes</title>
+  <meta name="description" content="Servicios de desarrollo web para clientes, aplicaciones y automatizaciones desde Alicante, España. Software fiable y a medida para empresas y profesionales que buscan crecer en línea." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="desarrollo web Alicante, desarrollo aplicaciones Alicante, automatizaciones, desarrollo de software, soluciones digitales" />
     <meta name="geo.region" content="ES-A" />
@@ -17,18 +20,20 @@
     <meta name="geo.position" content="38.3452;-0.4815" />
     <meta name="ICBM" content="38.3452, -0.4815" />
     <meta name="author" content="Dani Domenech" />
-      <link rel="canonical" href="https://www.thedm.es/" />
-        <link rel="alternate" hreflang="es" href="https://www.thedm.es/" />
+  <link rel="canonical" href="https://www.thedm.es/" />
+  <link rel="alternate" hreflang="es" href="https://www.thedm.es/" />
+  <!-- Sitemap for search engines -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <meta property="og:title" content="TheDM | Soluciones Digitales - Desarrollo Web en Alicante" />
       <meta property="og:description" content="Servicios de desarrollo web, aplicaciones y automatizaciones desde Alicante para empresas y profesionales." />
     <meta property="og:url" content="https://www.thedm.es/" />
     <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://www.thedm.es/logo.svg" />
+  <meta property="og:image" content="https://www.thedm.es/logo.svg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="TheDM | Soluciones Digitales - Desarrollo Web en Alicante" />
-        <meta name="twitter:description" content="Servicios de desarrollo web, aplicaciones y automatizaciones desde Alicante para empresas y profesionales." />
-        <meta name="twitter:image" content="https://www.thedm.es/logo.svg" />
+  <meta name="twitter:title" content="TheDM | Soluciones Digitales - Desarrollo Web en Alicante | Desarrollo Web para Clientes" />
+  <meta name="twitter:description" content="Servicios de desarrollo web para clientes, aplicaciones y automatizaciones desde Alicante para empresas y profesionales." />
+  <meta name="twitter:image" content="https://www.thedm.es/logo.svg" />
       <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -61,6 +66,21 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NPFCKMBS');</script>
     <!-- End Google Tag Manager -->
+    <!-- Breadcrumb structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://www.thedm.es/"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -68,6 +88,8 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <script type="module" src="/src/main.tsx"></script>
+  <!-- AddThis Social Share Buttons -->
+  <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-1234567890"></script>
   </body>
 </html>

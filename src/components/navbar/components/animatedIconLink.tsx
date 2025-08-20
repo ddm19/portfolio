@@ -59,8 +59,8 @@ const AnimatedIconLink = (props: AnimatedIconLinkProps) => {
             onMouseEnter={handleMouseEnter}
             onAnimationEnd={handleAnimationEnd}
             aria-label={label}
-            target={isBlank ? "_blank" : ""}
-            rel="noreferrer"
+            target={isBlank ? "_blank" : undefined}
+            rel={isBlank ? "noopener noreferrer" : undefined}
         >
             <FontAwesomeIcon icon={icon} />
         </a>
