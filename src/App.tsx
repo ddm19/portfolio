@@ -11,6 +11,7 @@ import ScrollToTop from 'components/scrollToTop/scrollToTop';
 import Projects from 'components/projects/projects';
 import Contact from 'components/contact/contact';
 import Services from 'components/services/services';
+import LanguageSwitcher from 'components/navbar/LanguageSwitcher';
 
 
 function App() {
@@ -57,6 +58,8 @@ function App() {
     <>
 
       <div className="app">
+        <LanguageSwitcher />
+
         <ParticlesBackground />
 
         <div className="logo">

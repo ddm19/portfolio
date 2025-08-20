@@ -1,8 +1,23 @@
-.language-switcher
+.languageSwitcher
 {
+    position: absolute;
+    left: var(--spacing-3);
+    top: var(--spacing-3);
+    z-index: var(--z-modal);
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
+    border: 1px solid var(--color-bg-card-dark);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+    background: var(--color-bg-card);
+
+    @media (max-width: 768px)
+    {
+        left: var(--spacing-1);
+        top: var(--spacing-1);
+        padding: var(--spacing-xs);
+    }
 
     &__icon
     {
@@ -14,20 +29,26 @@
         background: transparent;
         border: none;
         color: var(--color-text-light);
-        padding: var(--spacing-xs);
+        padding: var(--spacing-sm);
         font-size: var(--font-sm);
         cursor: pointer;
         transition: color 0.2s;
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        transition: all 0.2s ease-in-out;
     }
 
     button:hover
     {
-        color: var(--color-primary);
+        color: var(--color-text-light);
     }
 
     button.active
     {
-        color: var(--color-primary);
+        color: var(--color-text-light);
         font-weight: bold;
+        border: 1px solid var(--color-gray-100);
+        border-radius: var(--radius-md);
     }
 }
