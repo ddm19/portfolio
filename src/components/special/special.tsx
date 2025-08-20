@@ -2,29 +2,31 @@ import CustomCard from "components/card/customCard";
 import './special.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBrain, faHandshake, faLightbulb, faWrench } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from 'react-i18next';
 
 const Special = () => {
+    const { t } = useTranslation();
     const specials = [
         {
-            title: 'Desarrollo Especializado',
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faBrain} className="card__icon" /> Me centro en entender de tu proyecto para ofrecer soluciones personalizadas y efectivas.</span>,
+            title: t('special.items.specialized.title'),
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faBrain} className="card__icon" /> {t('special.items.specialized.description')}</span>,
         },
         {
-            title: 'Innovación Continua',
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faLightbulb} className="card__icon" /> Siempre busco nuevas tecnologías y metodologías para mejorar la calidad y que obtengas el mejor resultado.</span>,
+            title: t('special.items.innovation.title'),
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faLightbulb} className="card__icon" /> {t('special.items.innovation.description')}</span>,
         },
         {
-            title: 'Colaboración Activa',
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faHandshake} className="card__icon" /> Trabajo de la mano contigo para asegurar que el producto final cumpla con tus expectativas y necesidades.</span>,
+            title: t('special.items.collaboration.title'),
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faHandshake} className="card__icon" /> {t('special.items.collaboration.description')}</span>,
         },
         {
-            title: 'Enfoque en Resultados',
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faWrench} className="card__icon" /> Mi objetivo es entregar un producto que no solo funcione, sino que también sea escalable y fácil de mantener.</span>,
+            title: t('special.items.results.title'),
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faWrench} className="card__icon" /> {t('special.items.results.description')}</span>,
         },
     ];
     return (
         <div className="specialContainer">
-            <h2 className="specialContainer__title">Especialidades</h2>
+            <h2 className="specialContainer__title">{t('special.title')}</h2>
 
             <div className="specialContainer__cards">
                 {specials.map((special, index) => (
@@ -36,3 +38,4 @@ const Special = () => {
 }
 
 export default Special;
+

@@ -1,11 +1,12 @@
 import './navbar.scss';
 import AnimatedIconLink from './components/animatedIconLink';
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 
 
 interface navbarItem {
     href: string;
-    icon: any;
+    icon: IconProp;
     label: string;
     title?: string;
 

@@ -3,9 +3,11 @@ import './about.scss';
 import React from 'react';
 import Special from 'components/special/special';
 import Experience from 'components/experience/experience';
+import { useTranslation, Trans } from 'react-i18next';
 
 const About = () => {
     const linkRef = useRef<HTMLAnchorElement>(null);
+    const { t } = useTranslation();
 
 
 
@@ -27,16 +29,25 @@ const About = () => {
             <Special />
 
             <div className="about__content">
-                <h2 className="about__title">Sobre Mí</h2>
+                <h2 className="about__title">{t('about.sectionTitle')}</h2>
                 <div className='about__contentContainer'>
                     <p className="about__description">
-                        Soy desarrollador frontend apasionado por el diseño UX/UI, pero no me asusta <span className="about--highlight">mancharme las manos</span> con nada.
-                        En mis anteriores empresas me bautizaron como <span className="about--highlight">Cacharrero</span> porque encuentro la solución adecuada a cada reto, sea cual sea la tecnología.
-                        Si necesitas una solución moderna y no tienes claro por dónde empezar, ¡estás en el lugar correcto!
-                        <span className="about--highlight"><a className='animate__animated animate__pulse' ref={linkRef}
-                            onAnimationEnd={handleAnimationEnd} href='#contact'> ¡Hablemos!</a></span>
+                        <Trans
+                            i18nKey="about.description"
+                            components={{ 1: <span className="about--highlight" /> }}
+                        />
+                        <span className="about--highlight">
+                            <a
+                                className='animate__animated animate__pulse'
+                                ref={linkRef}
+                                onAnimationEnd={handleAnimationEnd}
+                                href='#contact'
+                            >
+                                {t('about.talkButton')}
+                            </a>
+                        </span>
                     </p>
-                    <h2 className="about__title">Trayectoria Profesional</h2>
+                    <h2 className="about__title">{t('about.careerTitle')}</h2>
                 </div>
             </div>
 
