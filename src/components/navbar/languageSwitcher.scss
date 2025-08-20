@@ -1,0 +1,33 @@
+.language-switcher
+{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+
+    &__icon
+    {
+        color: var(--color-text-light);
+    }
+
+    button
+    {
+        background: transparent;
+        border: none;
+        color: var(--color-text-light);
+        padding: var(--spacing-xs);
+        font-size: var(--font-sm);
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+
+    button:hover
+    {
+        color: var(--color-primary);
+    }
+
+    button.active
+    {
+        color: var(--color-primary);
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "highlightWords": ["Ventaja","Inspiración","Sabiduría","Carisma","Fuerza"],
+  "titlePrefix": "Otórgale",
+  "titleSuffix": "a tu negocio",
+    "subtitle": "Soy Dani Domenech, un desarrollador web con experiencia en la creación de aplicaciones web modernas y eficientes. Mi objetivo es ayudarte a alcanzar tus metas digitales con soluciones personalizadas y efectivas.",
+    "buttonContact": "Contacta Conmigo",
+    "buttonCopy": "Copiar Email",
+    "notificationEmailCopied": "Email copiado al portapapeles"
+  },
+  "about": {
+    "sectionTitle": "Sobre Mí",
+    "description": "Soy desarrollador frontend apasionado por el diseño UX/UI, pero no me asusta <1>mancharme las manos</1> con nada. En mis anteriores empresas me bautizaron como <1>Cacharrero</1> porque encuentro la solución adecuada a cada reto, sea cual sea la tecnología. Si necesitas una solución moderna y no tienes claro por dónde empezar, ¡estás en el lugar correcto!",
+    "talkButton": "¡Hablemos!",
+    "careerTitle": "Trayectoria Profesional"
+  }
+}

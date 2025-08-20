@@ -1,4 +1,5 @@
 import './navbar.scss';
+import LanguageSwitcher from './LanguageSwitcher';
 import AnimatedIconLink from './components/animatedIconLink';
 
 
@@ -24,6 +25,7 @@ const Navbar = (props: navbarProps) => {
     return (
         <nav className={`nav animate__animated animate__slideInDown ${isFloating ? 'nav--floating' : ''}`}>
             <div className="navContainer">
+                {!isFloating && <LanguageSwitcher />}
                 <ul className="navMenu">
                     {items.map(({ href, icon, label, title }) => (
                         <li key={label} className="navMenu__item animate__animated animate__backInDown">
