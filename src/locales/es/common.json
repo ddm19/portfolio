@@ -13,5 +13,259 @@
     "description": "Soy desarrollador frontend apasionado por el diseño UX/UI, pero no me asusta <1>mancharme las manos</1> con nada. En mis anteriores empresas me bautizaron como <1>Cacharrero</1> porque encuentro la solución adecuada a cada reto, sea cual sea la tecnología. Si necesitas una solución moderna y no tienes claro por dónde empezar, ¡estás en el lugar correcto!",
     "talkButton": "¡Hablemos!",
     "careerTitle": "Trayectoria Profesional"
+  },
+  "projects": {
+    "title": "Portfolio",
+    "like": "¿Te gusta lo que ves?",
+    "stack": "Este es mi stack principal",
+    "talk": "¡Hablemos!",
+    "contact": "Contáctame",
+    "download": "Descargar CV",
+    "more": "Ver más proyectos",
+    "demo": "Demo",
+    "code": "Código",
+    "items": {
+      "bunkaDojo": {
+        "title": "Bunka Dojo",
+        "description": "Marketplace de TCGs y juegos de mesa.",
+        "alt": "Bunka Dojo"
+      },
+      "foodContest": {
+        "title": "Food Contest",
+        "description": "Página web de concursos de comida.",
+        "alt": "Food Contest"
+      },
+      "aqivap": {
+        "title": "Aqivap",
+        "description": "Maqueta de una tienda online de vapeo.",
+        "alt": "Aqivap"
+      },
+      "hispania": {
+        "title": "Hispania",
+        "description": "Página web / Blog de juegos de Rol y D&D.",
+        "alt": "Hispania"
+      }
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Soluciones digitales a medida para impulsar tu proyecto.",
+    "web": {
+      "title": "Desarrollo Web",
+      "description": "Sitios rápidos, accesibles y optimizados para SEO con stack moderno.",
+      "budget": "Solicita un presupuesto",
+      "projects": "Ver proyectos"
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "description": "Tiendas online seguras y escalables, con pasarelas de pago integradas.",
+      "start": "Quiero Empezar a vender",
+      "cases": "Casos de uso"
+    },
+    "uiux": {
+      "title": "UI/UX",
+      "description": "Diseño centrado en el usuario, flujos claros, app web responsive y PWA para una experiencia de usuario excepcional.",
+      "start": "Empieza tu App"
+    },
+    "uxui": {
+      "title": "UX / UI",
+      "description": "Diseño orientado a la experiencia del usuario, coherente y atractivo.",
+      "audit": "Solicita una Auditoría"
+    },
+    "seo": {
+      "title": "SEO y Analítica",
+      "description": "Mejora de posicionamiento y medición de KPIs para tomar decisiones.",
+      "improve": "Mejora mi SEO"
+    },
+    "integrations": {
+      "title": "Integraciones",
+      "description": "APIs, automatizaciones y conectores a servicios de terceros.",
+      "integrate": "Integra Ahora"
+    },
+    "automations": {
+      "title": "Automatizaciones",
+      "description": "Optimiza procesos y reduce costes con automatizaciones inteligentes.",
+      "optimize": "Optimiza mis Procesos"
+    },
+    "consulting": {
+      "title": "Consultoría",
+      "description": "Asesoramiento experto para la toma de decisiones estratégicas.",
+      "schedule": "Agenda una Consultoría"
+    },
+    "custom": {
+      "title": "Soluciones a Medida",
+      "description": "Desarrollo de software a medida para necesidades específicas de tu negocio.",
+      "create": "Crea tu Solución a Medida"
+    }
+  },
+  "special": {
+    "title": "Especialidades",
+    "items": {
+      "specialized": {
+        "title": "Desarrollo Especializado",
+        "description": "Me centro en entender tu proyecto para ofrecer soluciones personalizadas y efectivas."
+      },
+      "innovation": {
+        "title": "Innovación Continua",
+        "description": "Siempre busco nuevas tecnologías y metodologías para mejorar la calidad y que obtengas el mejor resultado."
+      },
+      "collaboration": {
+        "title": "Colaboración Activa",
+        "description": "Trabajo de la mano contigo para asegurar que el producto final cumpla con tus expectativas y necesidades."
+      },
+      "results": {
+        "title": "Enfoque en Resultados",
+        "description": "Mi objetivo es entregar un producto que no solo funcione, sino que también sea escalable y fácil de mantener."
+      }
+    }
+  },
+  "experience": {
+    "current": "Actualidad",
+    "start": "2019",
+    "items": {
+      "bunkaDojo": {
+        "title": "Co-Fundador / Desarrollador",
+        "date": "2025 → Actualidad",
+        "description": [
+          "Desarrollo de un marketplace de venta de cartas TCG.",
+          "Implementación de un sistema de gestión de inventario y pedidos.",
+          "Diseño y desarrollo de un panel de administración para la gestión de contenido.",
+          "Integración de pasarelas de pago y sistemas de seguridad.",
+          "Optimización y posicionamiento SEO del sitio web."
+        ]
+      },
+      "mermeladaJam": {
+        "title": "Game Designer / Developer",
+        "date": "2025",
+        "description": [
+          "Diseño y desarrollo de un juego generativo",
+          "Balance e implementación de animaciones y efectos especiales",
+          "Elaboración de sistemas escalables y reutilizables"
+        ]
+      },
+      "inired": {
+        "title": "Team Lead / Frontend",
+        "date": "2023 → Actualidad",
+        "description": [
+          "Coordinación de hasta 7 personas con Scrum; nexo con QA, diseño y cliente.",
+          "Obtención de requisitos, diseño UX/UI y desarrollo de componentes genéricos (SOLID, clean code).",
+          "Desarrollo desde los prototipos hasta la implementación final del producto de aplicaciones web y móviles.",
+          "Reducción del CSS bloat y resolución de bugs críticos en tiempo récord.",
+          "Creación de herramienta de migración de traducciones, mejorando tiempo de desarrollo de meses a semanas."
+        ]
+      },
+      "gamejam": {
+        "title": "Game Developer (Jam)",
+        "date": "2023",
+        "description": [
+          "Implementación de la lógica central del juego y gestión del backlog técnico.",
+          "Corrección de bugs bajo presión y mentorización a juniors en Git y flujo de trabajo."
+        ]
+      },
+      "altia": {
+        "title": "Backend Developer",
+        "date": "2022 → 2023",
+        "description": [
+          "Dirección de un pequeño equipo en un proyecto interno",
+          "Diseño y extracción de requisitos y reparto de tareas.",
+          "Desarrollo y optimización de componentes backend; creación de nuevos módulos reutilizables.",
+          "Resolución de bugs complejos y mejora de la calidad del código.",
+          "Soporte en despliegues con Jenkins."
+        ]
+      },
+      "olimpiadas": {
+        "title": "Olimpiadas Informáticas",
+        "date": "2019",
+        "description": [
+          "3.º clasificado a nivel provincial; enfoque en algoritmia y resolución de problemas."
+        ]
+      },
+      "amir": {
+        "title": "Técnico informático",
+        "date": "2020 → 2023",
+        "description": [
+          "Soporte técnico montando clases virtuales",
+          "Instalación de equipos informáticos",
+          "Resolución de incidencias en tiempo real",
+          "Implementación de soluciones tecnológicas"
+        ]
+      },
+      "freelance": {
+        "title": "Técnico informático",
+        "date": "2016 → Actualidad",
+        "description": [
+          "Instalación de equipos informáticos",
+          "Mantenimiento de equipos informáticos",
+          "Asesoramiento técnico a clientes"
+        ]
+      }
+    }
+  },
+  "navbar": {
+    "labels": {
+      "linkedin": "LinkedIn",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "github": "GitHub",
+      "projects": "Portfolio",
+      "services": "Servicios",
+      "about": "Sobre mí",
+      "contact": "Contacto"
+    },
+    "titles": {
+      "projects": "Proyectos",
+      "services": "Servicios",
+      "about": "Sobre mí",
+      "contact": "Contacto"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Cuéntame sobre tu proyecto y cómo puedo ayudarte.",
+    "sent": {
+      "title": "¡Mensaje enviado!",
+      "message": "Gracias por tu mensaje. Me pondré en contacto contigo pronto.",
+      "button": "Enviar otro mensaje"
+    },
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre",
+        "error": "El nombre es obligatorio."
+      },
+      "company": {
+        "label": "Empresa*",
+        "placeholder": "Nombre de la empresa",
+        "error": "El nombre de la empresa es obligatorio."
+      },
+      "email": {
+        "label": "Correo",
+        "placeholder": "tu@email.com",
+        "error": "Correo inválido."
+      },
+      "services": {
+        "label": "Servicios y soluciones",
+        "error": "Selecciona al menos un servicio."
+      },
+      "message": {
+        "label": "Cuéntame sobre tu proyecto",
+        "placeholder": "Objetivos, plazos, referencias...",
+        "error": "Escribe al menos 10 caracteres."
+      },
+      "submit": {
+        "send": "Enviar",
+        "sending": "Enviando..."
+      },
+      "options": {
+        "web": "Desarrollo Web",
+        "mobile": "App Móvil",
+        "ecommerce": "E-commerce",
+        "custom": "Soluciones a Medida",
+        "seo": "SEO | Posicionamiento Web",
+        "integrations": "Integraciones",
+        "consulting": "Consultoría",
+        "other": "Otros"
+      }
+    }
   }
 }

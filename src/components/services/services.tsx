@@ -1,105 +1,107 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faPaintbrush, faMobileScreen, faMagnifyingGlassChart, faGears, faBolt, faShield, faGlobe, faWandMagic, faWandMagicSparkles, faComments, faWrench } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping, faPaintbrush, faMobileScreen, faMagnifyingGlassChart, faGears, faGlobe, faWandMagicSparkles, faComments, faWrench } from "@fortawesome/free-solid-svg-icons";
 import CustomCard from "components/card/customCard";
+import { useTranslation } from 'react-i18next';
 import "./services.scss";
 
-const SERVICES = [
-    {
-        title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faGlobe} className="card__icon" /> Desarrollo Web</span>,
-        description: "Sitios rápidos, accesibles y optimizados para SEO con stack moderno.",
-        links: [
-            <a href="#contact" className="card__link">
-                <button className="card__button">Solicita un presupuesto</button>
-            </a>,
-            <a href="#projects" className="card__link">
-                <button className="card__button">Ver proyectos</button>
-            </a>,
-        ]
-    },
-    {
-        title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faCartShopping} className="card__icon" /> E‑commerce</span>,
-        description: "Tiendas online seguras y escalables, con pasarelas de pago integradas.",
-        links: [
-            <a href="#contact" className="card__link">
-                <button className="card__button">Quiero Empezar a vender</button>
-            </a>,
-            <a href="#projects" className="card__link">
-                <button className="card__button">Casos de uso</button>
-            </a>,
-        ]
-    },
-    {
-        title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faPaintbrush} className="card__icon" /> UI/UX</span>,
-        description: "Diseño centrado en el usuario, flujos claros, app web responsive y PWA para una experiencia de usuario excepcional.",
-        links: [
-            <a href="#contact" className="card__link">
-                <button className="card__button">Empieza tu App</button>
-            </a>,
-        ]
-    },
-    {
-        title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faMobileScreen} className="card__icon" /> UX / UI</span>,
-        description: "Diseño orientado a la experiencia del usuario, coherente y atractivo.",
-        links: [
-            <a href="#contact" className="card__link">
-                <button className="card__button">Solicita una Auditoría</button>
-            </a>,
-        ]
-    },
-    {
-        title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faMagnifyingGlassChart} className="card__icon" /> SEO y Analítica</span>,
-        description: "Mejora de posicionamiento y medición de KPIs para tomar decisiones.",
-        links: [
-            <a href="#contact" className="card__link">
-                <button className="card__button">Mejora mi SEO</button>
-            </a>,
-        ]
-    },
-    {
-        title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faGears} className="card__icon" /> Integraciones</span>,
-        description: "APIs, automatizaciones y conectores a servicios de terceros.",
-        links: [
-            <a href="#contact" className="card__link">
-                <button className="card__button">Integra Ahora</button>
-            </a>,
-        ]
-    },
-    {
-        title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faWandMagicSparkles} className="card__icon" /> Automatizaciones</span>,
-        description: "Optimiza procesos y reduce costes con automatizaciones inteligentes.",
-        links: [
-            <a href="#contact" className="card__link">
-                <button className="card__button">Optimiza mis Procesos</button>
-            </a>,
-        ]
-    },
-    {
-        title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faComments} className="card__icon" /> Consultoría</span>,
-        description: "Asesoramiento experto para la toma de decisiones estratégicas.",
-        links: [
-            <a href="#contact" className="card__link">
-                <button className="card__button">Agenda una Consultoría</button>
-            </a>,
-        ]
-    },
-    {
-        title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faWrench} className="card__icon" /> Soluciones a Medida</span>,
-        description: "Desarrollo de software a medida para necesidades específicas de tu negocio.",
-        links: [
-            <a href="#contact" className="card__link">
-                <button className="card__button">Crea tu Solución a Medida</button>
-            </a>,
-        ]
-    },
-
-];
-
-
 export default function Services() {
+    const { t } = useTranslation();
+
+    const SERVICES = [
+        {
+            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faGlobe} className="card__icon" /> {t('services.web.title')}</span>,
+            description: t('services.web.description'),
+            links: [
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.web.budget')}</button>
+                </a>,
+                <a href="#projects" className="card__link">
+                    <button className="card__button">{t('services.web.projects')}</button>
+                </a>,
+            ]
+        },
+        {
+            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faCartShopping} className="card__icon" /> {t('services.ecommerce.title')}</span>,
+            description: t('services.ecommerce.description'),
+            links: [
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.ecommerce.start')}</button>
+                </a>,
+                <a href="#projects" className="card__link">
+                    <button className="card__button">{t('services.ecommerce.cases')}</button>
+                </a>,
+            ]
+        },
+        {
+            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faPaintbrush} className="card__icon" /> {t('services.uiux.title')}</span>,
+            description: t('services.uiux.description'),
+            links: [
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.uiux.start')}</button>
+                </a>,
+            ]
+        },
+        {
+            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faMobileScreen} className="card__icon" /> {t('services.uxui.title')}</span>,
+            description: t('services.uxui.description'),
+            links: [
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.uxui.audit')}</button>
+                </a>,
+            ]
+        },
+        {
+            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faMagnifyingGlassChart} className="card__icon" /> {t('services.seo.title')}</span>,
+            description: t('services.seo.description'),
+            links: [
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.seo.improve')}</button>
+                </a>,
+            ]
+        },
+        {
+            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faGears} className="card__icon" /> {t('services.integrations.title')}</span>,
+            description: t('services.integrations.description'),
+            links: [
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.integrations.integrate')}</button>
+                </a>,
+            ]
+        },
+        {
+            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faWandMagicSparkles} className="card__icon" />{t('services.automations.title')}</span>,
+            description: t('services.automations.description'),
+            links: [
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.automations.optimize')}</button>
+                </a>,
+            ]
+        },
+        {
+            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faComments} className="card__icon" /> {t('services.consulting.title')}</span>,
+            description: t('services.consulting.description'),
+            links: [
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.consulting.schedule')}</button>
+                </a>,
+            ]
+        },
+        {
+            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faWrench} className="card__icon" /> {t('services.custom.title')}</span>,
+            description: t('services.custom.description'),
+            links: [
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.custom.create')}</button>
+                </a>,
+            ]
+        },
+
+    ];
+
     return (
         <section id="services" className="services customSection">
-            <h2 className="services__title">Servicios</h2>
-            <p className="services__subtitle">Soluciones digitales a medida para impulsar tu proyecto.</p>
+            <h2 className="services__title">{t('services.title')}</h2>
+            <p className="services__subtitle">{t('services.subtitle')}</p>
 
             <div className="services__grid">
                 {SERVICES.map((s, index) => (
