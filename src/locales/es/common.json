@@ -118,5 +118,87 @@
         "description": "Mi objetivo es entregar un producto que no solo funcione, sino que también sea escalable y fácil de mantener."
       }
     }
+  },
+  "experience": {
+    "current": "Actualidad",
+    "start": "2019",
+    "items": {
+      "bunkaDojo": {
+        "title": "Co-Fundador / Desarrollador",
+        "date": "2025 → Actualidad",
+        "description": [
+          "Desarrollo de un marketplace de venta de cartas TCG.",
+          "Implementación de un sistema de gestión de inventario y pedidos.",
+          "Diseño y desarrollo de un panel de administración para la gestión de contenido.",
+          "Integración de pasarelas de pago y sistemas de seguridad.",
+          "Optimización y posicionamiento SEO del sitio web."
+        ]
+      },
+      "mermeladaJam": {
+        "title": "Game Designer / Developer",
+        "date": "2025",
+        "description": [
+          "Diseño y desarrollo de un juego generativo",
+          "Balance e implementación de animaciones y efectos especiales",
+          "Elaboración de sistemas escalables y reutilizables"
+        ]
+      },
+      "inired": {
+        "title": "Team Lead / Frontend",
+        "date": "2023 → Actualidad",
+        "description": [
+          "Coordinación de hasta 7 personas con Scrum; nexo con QA, diseño y cliente.",
+          "Obtención de requisitos, diseño UX/UI y desarrollo de componentes genéricos (SOLID, clean code).",
+          "Desarrollo desde los prototipos hasta la implementación final del producto de aplicaciones web y móviles.",
+          "Reducción del CSS bloat y resolución de bugs críticos en tiempo récord.",
+          "Creación de herramienta de migración de traducciones, mejorando tiempo de desarrollo de meses a semanas."
+        ]
+      },
+      "gamejam": {
+        "title": "Game Developer (Jam)",
+        "date": "2023",
+        "description": [
+          "Implementación de la lógica central del juego y gestión del backlog técnico.",
+          "Corrección de bugs bajo presión y mentorización a juniors en Git y flujo de trabajo."
+        ]
+      },
+      "altia": {
+        "title": "Backend Developer",
+        "date": "2022 → 2023",
+        "description": [
+          "Dirección de un pequeño equipo en un proyecto interno",
+          "Diseño y extracción de requisitos y reparto de tareas.",
+          "Desarrollo y optimización de componentes backend; creación de nuevos módulos reutilizables.",
+          "Resolución de bugs complejos y mejora de la calidad del código.",
+          "Soporte en despliegues con Jenkins."
+        ]
+      },
+      "olimpiadas": {
+        "title": "Olimpiadas Informáticas",
+        "date": "2019",
+        "description": [
+          "3.º clasificado a nivel provincial; enfoque en algoritmia y resolución de problemas."
+        ]
+      },
+      "amir": {
+        "title": "Técnico informático",
+        "date": "2020 → 2023",
+        "description": [
+          "Soporte técnico montando clases virtuales",
+          "Instalación de equipos informáticos",
+          "Resolución de incidencias en tiempo real",
+          "Implementación de soluciones tecnológicas"
+        ]
+      },
+      "freelance": {
+        "title": "Técnico informático",
+        "date": "2016 → Actualidad",
+        "description": [
+          "Instalación de equipos informáticos",
+          "Mantenimiento de equipos informáticos",
+          "Asesoramiento técnico a clientes"
+        ]
+      }
+    }
   }
 }

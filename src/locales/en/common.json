@@ -118,5 +118,87 @@
         "description": "My goal is to deliver a product that not only works but is also scalable and easy to maintain."
       }
     }
+  },
+  "experience": {
+    "current": "Present",
+    "start": "2019",
+    "items": {
+      "bunkaDojo": {
+        "title": "Co-Founder / Developer",
+        "date": "2025 → Present",
+        "description": [
+          "Development of a marketplace for TCG card sales.",
+          "Implementation of an inventory and order management system.",
+          "Design and development of an administration panel for content management.",
+          "Integration of payment gateways and security systems.",
+          "Optimization and SEO positioning of the website."
+        ]
+      },
+      "mermeladaJam": {
+        "title": "Game Designer / Developer",
+        "date": "2025",
+        "description": [
+          "Design and development of a generative game",
+          "Balancing and implementation of animations and special effects",
+          "Creation of scalable and reusable systems"
+        ]
+      },
+      "inired": {
+        "title": "Team Lead / Frontend",
+        "date": "2023 → Present",
+        "description": [
+          "Coordination of up to 7 people using Scrum; liaison with QA, design and client.",
+          "Requirements gathering, UX/UI design and development of generic components (SOLID, clean code).",
+          "Development from prototypes to final implementation of web and mobile applications.",
+          "Reduction of CSS bloat and resolution of critical bugs in record time.",
+          "Creation of a translation migration tool, improving development time from months to weeks."
+        ]
+      },
+      "gamejam": {
+        "title": "Game Developer (Jam)",
+        "date": "2023",
+        "description": [
+          "Implementation of the core game logic and management of the technical backlog.",
+          "Bug fixing under pressure and mentoring juniors in Git and workflow."
+        ]
+      },
+      "altia": {
+        "title": "Backend Developer",
+        "date": "2022 → 2023",
+        "description": [
+          "Management of a small team on an internal project",
+          "Design and extraction of requirements and task distribution.",
+          "Development and optimization of backend components; creation of new reusable modules.",
+          "Resolution of complex bugs and improvement of code quality.",
+          "Support in deployments with Jenkins."
+        ]
+      },
+      "olimpiadas": {
+        "title": "Informatics Olympiad",
+        "date": "2019",
+        "description": [
+          "3rd place at the provincial level; focus on algorithms and problem solving."
+        ]
+      },
+      "amir": {
+        "title": "IT Technician",
+        "date": "2020 → 2023",
+        "description": [
+          "Technical support setting up virtual classes",
+          "Installation of computer equipment",
+          "Real-time incident resolution",
+          "Implementation of technological solutions"
+        ]
+      },
+      "freelance": {
+        "title": "IT Technician",
+        "date": "2016 → Present",
+        "description": [
+          "Installation of computer equipment",
+          "Maintenance of computer equipment",
+          "Technical consulting for clients"
+        ]
+      }
+    }
   }
 }
