@@ -21,7 +21,31 @@
     "talk": "¡Hablemos!",
     "contact": "Contáctame",
     "download": "Descargar CV",
-    "more": "Ver más proyectos"
+    "more": "Ver más proyectos",
+    "demo": "Demo",
+    "code": "Código",
+    "items": {
+      "bunkaDojo": {
+        "title": "Bunka Dojo",
+        "description": "Marketplace de TCGs y juegos de mesa.",
+        "alt": "Bunka Dojo"
+      },
+      "foodContest": {
+        "title": "Food Contest",
+        "description": "Página web de concursos de comida.",
+        "alt": "Food Contest"
+      },
+      "aqivap": {
+        "title": "Aqivap",
+        "description": "Maqueta de una tienda online de vapeo.",
+        "alt": "Aqivap"
+      },
+      "hispania": {
+        "title": "Hispania",
+        "description": "Página web / Blog de juegos de Rol y D&D.",
+        "alt": "Hispania"
+      }
+    }
   },
   "services": {
     "title": "Servicios",

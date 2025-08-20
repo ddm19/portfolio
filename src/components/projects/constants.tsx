@@ -1,26 +1,27 @@
 import { faBolt, faCube, faExternalLink, faM, faV } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAndroid, faCss3, faGitAlt, faGithub, faHtml5, faNodeJs, faReact, faSass, faStripe } from "@fortawesome/free-brands-svg-icons";
+import i18n from '../../i18n';
 
 export const projects = [
     {
-        title: "Bunka Dojo",
-        description: "Marketplace de TCGs y juegos de mesa.",
+        title: i18n.t('projects.items.bunkaDojo.title'),
+        description: i18n.t('projects.items.bunkaDojo.description'),
         href: "https://www.bunkadojo.com",
         links: [
             <a href="https://www.bunkadojo.com" className="card__link" target="_blank" >
                 <button className="card__button">
-                    Demo <FontAwesomeIcon icon={faExternalLink} />
+                    {i18n.t('projects.demo')} <FontAwesomeIcon icon={faExternalLink} />
                 </button>
             </a>,
             <a href="https://github.com/ddm19/BunkaTCG" className="card__link" target="_blank" >
                 <button className="card__button">
-                    Código <FontAwesomeIcon icon={faGithub} />
+                    {i18n.t('projects.code')} <FontAwesomeIcon icon={faGithub} />
                 </button>
             </a>
         ],
         image: "/bunkaDojo.png",
-        alt: "Bunka Dojo",
+        alt: i18n.t('projects.items.bunkaDojo.alt'),
         technologies: [
             <span><FontAwesomeIcon icon={faHtml5} /> HTML5</span>,
             <span><FontAwesomeIcon icon={faReact} /> React</span>,
@@ -30,23 +31,23 @@ export const projects = [
             <span><FontAwesomeIcon icon={faSass} /> Sass</span>]
     },
     {
-        title: "Food Contest",
-        description: "Página web de concursos de comida.",
+        title: i18n.t('projects.items.foodContest.title'),
+        description: i18n.t('projects.items.foodContest.description'),
         href: "https://food-contest.vercel.app",
         links: [
             <a href="https://food-contest.vercel.app" className="card__link" target="_blank" >
                 <button className="card__button">
-                    Demo <FontAwesomeIcon icon={faExternalLink} />
+                    {i18n.t('projects.demo')} <FontAwesomeIcon icon={faExternalLink} />
                 </button>
             </a>,
             <a href="https://github.com/ddm19/FoodContest" className="card__link" target="_blank" >
                 <button className="card__button">
-                    Código <FontAwesomeIcon icon={faGithub} />
+                    {i18n.t('projects.code')} <FontAwesomeIcon icon={faGithub} />
                 </button>
             </a>
         ],
         image: "/foodContest.png",
-        alt: "Food Contest",
+        alt: i18n.t('projects.items.foodContest.alt'),
         technologies: [
             <span><FontAwesomeIcon icon={faReact} /> React</span>,
             "TypeScript",
@@ -59,46 +60,46 @@ export const projects = [
         ]
     },
     {
-        title: "Aqivap",
-        description: "Maqueta de una tienda online de vapeo.",
+        title: i18n.t('projects.items.aqivap.title'),
+        description: i18n.t('projects.items.aqivap.description'),
         href: "https://aqivap.vercel.app",
         links: [
             <a href="https://aqivap.vercel.app" className="card__link" target="_blank" >
                 <button className="card__button">
-                    Demo <FontAwesomeIcon icon={faExternalLink} />
+                    {i18n.t('projects.demo')} <FontAwesomeIcon icon={faExternalLink} />
                 </button>
             </a>,
             <a href="https://github.com/ddm19/Aqivap" className="card__link" target="_blank" >
                 <button className="card__button">
-                    Código <FontAwesomeIcon icon={faGithub} />
+                    {i18n.t('projects.code')} <FontAwesomeIcon icon={faGithub} />
                 </button>
             </a>
         ],
         image: "/aqivap.png",
-        alt: "Aqivap",
+        alt: i18n.t('projects.items.aqivap.alt'),
         technologies: [<span><FontAwesomeIcon icon={faReact} /> React</span>, "TypeScript", <span><FontAwesomeIcon icon={faSass} /> Sass</span>, <span><FontAwesomeIcon icon={faHtml5} /> HTML5</span>,
         <span><FontAwesomeIcon icon={faCube} /> Cursor AI</span>,
         <span><FontAwesomeIcon icon={faV} /> Vite</span>
         ]
     },
     {
-        title: "Hispania",
-        description: "Página web / Blog de juegos de Rol y D&D.",
+        title: i18n.t('projects.items.hispania.title'),
+        description: i18n.t('projects.items.hispania.description'),
         href: "https://hispania.thedm.es",
         links: [
             <a href="https://hispania.thedm.es" className="card__link" target="_blank" >
                 <button className="card__button">
-                    Demo <FontAwesomeIcon icon={faExternalLink} />
+                    {i18n.t('projects.demo')} <FontAwesomeIcon icon={faExternalLink} />
                 </button>
             </a>,
             <a href="https://github.com/ddm19/rol" className="card__link" target="_blank" >
                 <button className="card__button">
-                    Código <FontAwesomeIcon icon={faGithub} />
+                    {i18n.t('projects.code')} <FontAwesomeIcon icon={faGithub} />
                 </button>
             </a>
         ],
         image: "/hispania.png",
-        alt: "Food Contest",
+        alt: i18n.t('projects.items.hispania.alt'),
         technologies: [
             <span><FontAwesomeIcon icon={faHtml5} /> HTML5</span>,
             <span><FontAwesomeIcon icon={faReact} /> React</span>,
