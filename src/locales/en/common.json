@@ -201,6 +201,24 @@
       }
     }
   },
+  "navbar": {
+    "labels": {
+      "linkedin": "LinkedIn",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "github": "GitHub",
+      "projects": "Portfolio",
+      "services": "Services",
+      "about": "About Me",
+      "contact": "Contact"
+    },
+    "titles": {
+      "projects": "Projects",
+      "services": "Services",
+      "about": "About Me",
+      "contact": "Contact"
+    }
+  },
   "contact": {
     "title": "Contact",
     "subtitle": "Tell me about your project and how I can help you.",
