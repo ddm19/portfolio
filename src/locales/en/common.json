@@ -22,5 +22,56 @@
     "contact": "Contact me",
     "download": "Download CV",
     "more": "See more projects"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Tailored digital solutions to boost your project.",
+    "web": {
+      "title": "Web Development",
+      "description": "Fast, accessible, SEO-optimized sites built with a modern stack.",
+      "budget": "Request a quote",
+      "projects": "See projects"
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "description": "Secure and scalable online stores with integrated payment gateways.",
+      "start": "Start selling",
+      "cases": "Use cases"
+    },
+    "uiux": {
+      "title": "UI/UX",
+      "description": "User-centered design, clear flows, responsive web apps and PWAs for an exceptional experience.",
+      "start": "Start your App"
+    },
+    "uxui": {
+      "title": "UX / UI",
+      "description": "Design focused on user experience, consistent and appealing.",
+      "audit": "Request an Audit"
+    },
+    "seo": {
+      "title": "SEO & Analytics",
+      "description": "Improve positioning and track KPIs to make informed decisions.",
+      "improve": "Improve my SEO"
+    },
+    "integrations": {
+      "title": "Integrations",
+      "description": "APIs, automations and connectors to third-party services.",
+      "integrate": "Integrate Now"
+    },
+    "automations": {
+      "title": "Automations",
+      "description": "Optimize processes and reduce costs with intelligent automations.",
+      "optimize": "Optimize my Processes"
+    },
+    "consulting": {
+      "title": "Consulting",
+      "description": "Expert advice to make strategic decisions.",
+      "schedule": "Schedule a Consultation"
+    },
+    "custom": {
+      "title": "Custom Solutions",
+      "description": "Tailor-made software development for your business needs.",
+      "create": "Create your Custom Solution"
+    }
   }
 }

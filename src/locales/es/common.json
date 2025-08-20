@@ -22,5 +22,56 @@
     "contact": "Contáctame",
     "download": "Descargar CV",
     "more": "Ver más proyectos"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Soluciones digitales a medida para impulsar tu proyecto.",
+    "web": {
+      "title": "Desarrollo Web",
+      "description": "Sitios rápidos, accesibles y optimizados para SEO con stack moderno.",
+      "budget": "Solicita un presupuesto",
+      "projects": "Ver proyectos"
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "description": "Tiendas online seguras y escalables, con pasarelas de pago integradas.",
+      "start": "Quiero Empezar a vender",
+      "cases": "Casos de uso"
+    },
+    "uiux": {
+      "title": "UI/UX",
+      "description": "Diseño centrado en el usuario, flujos claros, app web responsive y PWA para una experiencia de usuario excepcional.",
+      "start": "Empieza tu App"
+    },
+    "uxui": {
+      "title": "UX / UI",
+      "description": "Diseño orientado a la experiencia del usuario, coherente y atractivo.",
+      "audit": "Solicita una Auditoría"
+    },
+    "seo": {
+      "title": "SEO y Analítica",
+      "description": "Mejora de posicionamiento y medición de KPIs para tomar decisiones.",
+      "improve": "Mejora mi SEO"
+    },
+    "integrations": {
+      "title": "Integraciones",
+      "description": "APIs, automatizaciones y conectores a servicios de terceros.",
+      "integrate": "Integra Ahora"
+    },
+    "automations": {
+      "title": "Automatizaciones",
+      "description": "Optimiza procesos y reduce costes con automatizaciones inteligentes.",
+      "optimize": "Optimiza mis Procesos"
+    },
+    "consulting": {
+      "title": "Consultoría",
+      "description": "Asesoramiento experto para la toma de decisiones estratégicas.",
+      "schedule": "Agenda una Consultoría"
+    },
+    "custom": {
+      "title": "Soluciones a Medida",
+      "description": "Desarrollo de software a medida para necesidades específicas de tu negocio.",
+      "create": "Crea tu Solución a Medida"
+    }
   }
 }
