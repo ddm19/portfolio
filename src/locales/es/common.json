@@ -200,5 +200,54 @@
         ]
       }
     }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Cuéntame sobre tu proyecto y cómo puedo ayudarte.",
+    "sent": {
+      "title": "¡Mensaje enviado!",
+      "message": "Gracias por tu mensaje. Me pondré en contacto contigo pronto.",
+      "button": "Enviar otro mensaje"
+    },
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre",
+        "error": "El nombre es obligatorio."
+      },
+      "company": {
+        "label": "Empresa*",
+        "placeholder": "Nombre de la empresa",
+        "error": "El nombre de la empresa es obligatorio."
+      },
+      "email": {
+        "label": "Correo",
+        "placeholder": "tu@email.com",
+        "error": "Correo inválido."
+      },
+      "services": {
+        "label": "Servicios y soluciones",
+        "error": "Selecciona al menos un servicio."
+      },
+      "message": {
+        "label": "Cuéntame sobre tu proyecto",
+        "placeholder": "Objetivos, plazos, referencias...",
+        "error": "Escribe al menos 10 caracteres."
+      },
+      "submit": {
+        "send": "Enviar",
+        "sending": "Enviando..."
+      },
+      "options": {
+        "web": "Desarrollo Web",
+        "mobile": "App Móvil",
+        "ecommerce": "E-commerce",
+        "custom": "Soluciones a Medida",
+        "seo": "SEO | Posicionamiento Web",
+        "integrations": "Integraciones",
+        "consulting": "Consultoría",
+        "other": "Otros"
+      }
+    }
   }
 }

@@ -200,5 +200,54 @@
         ]
       }
     }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Tell me about your project and how I can help you.",
+    "sent": {
+      "title": "Message sent!",
+      "message": "Thank you for your message. I will get back to you soon.",
+      "button": "Send another message"
+    },
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name",
+        "error": "Name is required."
+      },
+      "company": {
+        "label": "Company*",
+        "placeholder": "Company name",
+        "error": "Company name is required."
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your@email.com",
+        "error": "Invalid email."
+      },
+      "services": {
+        "label": "Services and solutions",
+        "error": "Select at least one service."
+      },
+      "message": {
+        "label": "Tell me about your project",
+        "placeholder": "Objectives, deadlines, references...",
+        "error": "Write at least 10 characters."
+      },
+      "submit": {
+        "send": "Send",
+        "sending": "Sending..."
+      },
+      "options": {
+        "web": "Web Development",
+        "mobile": "Mobile App",
+        "ecommerce": "E-commerce",
+        "custom": "Custom Solutions",
+        "seo": "SEO | Web Positioning",
+        "integrations": "Integrations",
+        "consulting": "Consulting",
+        "other": "Others"
+      }
+    }
   }
 }

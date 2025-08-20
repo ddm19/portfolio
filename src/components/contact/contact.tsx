@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./contact.scss";
 import { contact } from "actions/contact";
+import { useTranslation } from "react-i18next";
+import type { TFunction } from "i18next";
 
 type FormState = {
     name: string;
@@ -12,18 +14,20 @@ type FormState = {
 
 const MAX_OPTIONS = 5;
 
-const SERVICES = [
-    "Desarrollo Web",
-    "App Móvil",
-    "E-commerce",
-    "Soluciones a Medida",
-    "SEO | Posicionamiento Web",
-    "Integraciones",
-    "Consultoría",
-    "Otros"
+const getServices = (t: TFunction) => [
+    t("contact.form.options.web"),
+    t("contact.form.options.mobile"),
+    t("contact.form.options.ecommerce"),
+    t("contact.form.options.custom"),
+    t("contact.form.options.seo"),
+    t("contact.form.options.integrations"),
+    t("contact.form.options.consulting"),
+    t("contact.form.options.other"),
 ];
 
 export default function Contact() {
+    const { t } = useTranslation();
+    const services = getServices(t);
     const [form, setForm] = useState<FormState>({
         name: "",
         company: "",
@@ -47,11 +51,11 @@ export default function Contact() {
 
     const validate = () => {
         const next: typeof errors = {};
-        if (!form.name.trim()) next.name = "El nombre es obligatorio.";
-        if (!form.company.trim()) next.company = "El nombre de la empresa es obligatorio.";
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) next.email = "Correo inválido.";
-        if (form.services.length === 0) next.services = "Selecciona al menos un servicio.";
-        if (form.message.trim().length < 10) next.message = "Escribe al menos 10 caracteres.";
+        if (!form.name.trim()) next.name = t("contact.form.name.error");
+        if (!form.company.trim()) next.company = t("contact.form.company.error");
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) next.email = t("contact.form.email.error");
+        if (form.services.length === 0) next.services = t("contact.form.services.error");
+        if (form.message.trim().length < 10) next.message = t("contact.form.message.error");
 
         setErrors(next);
         return Object.keys(next).length === 0;
@@ -78,31 +82,30 @@ export default function Contact() {
     };
 
     return (
-
         <section className="contact customSection" id="contact">
             {sent ? (
                 <div className="contact__sentMessage">
-                    <h2>¡Mensaje enviado!</h2>
-                    <p>Gracias por tu mensaje. Me pondré en contacto contigo pronto.</p>
+                    <h2>{t("contact.sent.title")}</h2>
+                    <p>{t("contact.sent.message")}</p>
                     <button className="contact__button" onClick={() => setSent(false)}>
-                        Enviar otro mensaje
+                        {t("contact.sent.button")}
                     </button>
                 </div>
             ) : (
                 <>
-                    <h2 className="contact__title">Contacto</h2>
-                    <p className="contact__subtitle">Cuéntame sobre tu proyecto y cómo puedo ayudarte.</p>
+                    <h2 className="contact__title">{t("contact.title")}</h2>
+                    <p className="contact__subtitle">{t("contact.subtitle")}</p>
 
                     <form className="contact__form" onSubmit={onSubmit} noValidate>
                         <div className="contact__group">
-                            <label htmlFor="name" className="contact__label">Nombre</label>
+                            <label htmlFor="name" className="contact__label">{t("contact.form.name.label")}</label>
                             <input
                                 id="name"
                                 name="name"
                                 className={`contact__input ${errors.name ? "is-invalid" : ""}`}
                                 value={form.name}
                                 onChange={onChange}
-                                placeholder="Tu nombre"
+                                placeholder={t("contact.form.name.placeholder")}
                                 autoComplete="name"
                                 aria-invalid={!!errors.name}
                                 required
@@ -111,7 +114,7 @@ export default function Contact() {
                         </div>
 
                         <div className="contact__group">
-                            <label htmlFor="company" className="contact__label">Empresa*</label>
+                            <label htmlFor="company" className="contact__label">{t("contact.form.company.label")}</label>
                             <input
                                 id="company"
                                 name="company"
@@ -119,14 +122,14 @@ export default function Contact() {
                                 value={form.company}
                                 onChange={onChange}
                                 aria-invalid={!!errors.company}
-                                placeholder="Nombre de la empresa"
+                                placeholder={t("contact.form.company.placeholder")}
                                 autoComplete="organization"
                             />
                             {errors.company && <span className="contact__error">{errors.company}</span>}
                         </div>
 
                         <div className="contact__group">
-                            <label htmlFor="email" className="contact__label">Correo</label>
+                            <label htmlFor="email" className="contact__label">{t("contact.form.email.label")}</label>
                             <input
                                 id="email"
                                 name="email"
@@ -134,7 +137,7 @@ export default function Contact() {
                                 className={`contact__input ${errors.email ? "is-invalid" : ""}`}
                                 value={form.email}
                                 onChange={onChange}
-                                placeholder="tu@email.com"
+                                placeholder={t("contact.form.email.placeholder")}
                                 autoComplete="email"
                                 aria-invalid={!!errors.email}
                                 required
@@ -143,7 +146,7 @@ export default function Contact() {
                         </div>
 
                         <div className="contact__group contact__group">
-                            <label htmlFor="services" className="contact__label">Servicios y soluciones</label>
+                            <label htmlFor="services" className="contact__label">{t("contact.form.services.label")}</label>
                             <select
                                 id="services"
                                 name="services"
@@ -152,10 +155,10 @@ export default function Contact() {
                                 value={form.services}
                                 onChange={onServicesChange}
                                 aria-invalid={!!errors.services}
-                                size={Math.min(MAX_OPTIONS, SERVICES.length)}
+                                size={Math.min(MAX_OPTIONS, services.length)}
                                 required
                             >
-                                {SERVICES.map(s => (
+                                {services.map(s => (
                                     <option key={s} value={s}>{s}</option>
                                 ))}
                             </select>
@@ -163,14 +166,14 @@ export default function Contact() {
                         </div>
 
                         <div className="contact__group contact__group--full">
-                            <label htmlFor="message" className="contact__label">Cuéntame sobre tu proyecto</label>
+                            <label htmlFor="message" className="contact__label">{t("contact.form.message.label")}</label>
                             <textarea
                                 id="message"
                                 name="message"
                                 className={`contact__textarea ${errors.message ? "is-invalid" : ""}`}
                                 value={form.message}
                                 onChange={onChange}
-                                placeholder="Objetivos, plazos, referencias..."
+                                placeholder={t("contact.form.message.placeholder")}
                                 aria-invalid={!!errors.message}
                                 required
                             />
@@ -179,11 +182,12 @@ export default function Contact() {
 
                         <div className="contact__actions">
                             <button className="contact__button" type="submit" disabled={submitting}>
-                                {submitting ? "Enviando..." : "Enviar"}
+                                {submitting ? t("contact.form.submit.sending") : t("contact.form.submit.send")}
                             </button>
                         </div>
                     </form>
-                </>)}
+                </>
+            )}
         </section>
     );
 }
