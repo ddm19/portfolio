@@ -23,9 +23,9 @@ const HeroSection = () => {
                 <img draggable="false" src='/logo_engineer.svg' alt="Logo" className="heroSection__logo" />
 
                 <div>
-                    <h2 className="heroSection__title">
+                    <h1 className="heroSection__title">
                         {t('hero.titlePrefix')} <span className="heroSection__title--highlight">{text}</span> {t('hero.titleSuffix')}
-                    </h2>
+                    </h1>
                     <p className="heroSection__subtitle">
                         {t('hero.subtitle')}
                     </p>

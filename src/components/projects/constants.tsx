@@ -9,12 +9,12 @@ export const getProjects = (t: TFunction) => [
         description: t('projects.items.bunkaDojo.description'),
         href: "https://www.bunkadojo.com",
         links: [
-            <a href="https://www.bunkadojo.com" className="card__link" target="_blank" >
+            <a href="https://www.bunkadojo.com" className="card__link" target="_blank" rel="noopener noreferrer">
                 <button className="card__button">
                     {t('projects.demo')} <FontAwesomeIcon icon={faExternalLink} />
                 </button>
             </a>,
-            <a href="https://github.com/ddm19/BunkaTCG" className="card__link" target="_blank" >
+            <a href="https://github.com/ddm19/BunkaTCG" className="card__link" target="_blank" rel="noopener noreferrer">
                 <button className="card__button">
                     {t('projects.code')} <FontAwesomeIcon icon={faGithub} />
                 </button>
@@ -36,12 +36,12 @@ export const getProjects = (t: TFunction) => [
         description: t('projects.items.foodContest.description'),
         href: "https://food-contest.vercel.app",
         links: [
-            <a href="https://food-contest.vercel.app" className="card__link" target="_blank" >
+            <a href="https://food-contest.vercel.app" className="card__link" target="_blank" rel="noopener noreferrer">
                 <button className="card__button">
                     {t('projects.demo')} <FontAwesomeIcon icon={faExternalLink} />
                 </button>
             </a>,
-            <a href="https://github.com/ddm19/FoodContest" className="card__link" target="_blank" >
+            <a href="https://github.com/ddm19/FoodContest" className="card__link" target="_blank" rel="noopener noreferrer">
                 <button className="card__button">
                     {t('projects.code')} <FontAwesomeIcon icon={faGithub} />
                 </button>
@@ -63,12 +63,12 @@ export const getProjects = (t: TFunction) => [
         description: t('projects.items.aqivap.description'),
         href: "https://aqivap.vercel.app",
         links: [
-            <a href="https://aqivap.vercel.app" className="card__link" target="_blank" >
+            <a href="https://aqivap.vercel.app" className="card__link" target="_blank" rel="noopener noreferrer">
                 <button className="card__button">
                     {t('projects.demo')} <FontAwesomeIcon icon={faExternalLink} />
                 </button>
             </a>,
-            <a href="https://github.com/ddm19/Aqivap" className="card__link" target="_blank" >
+            <a href="https://github.com/ddm19/Aqivap" className="card__link" target="_blank" rel="noopener noreferrer">
                 <button className="card__button">
                     {t('projects.code')} <FontAwesomeIcon icon={faGithub} />
                 </button>
@@ -90,12 +90,12 @@ export const getProjects = (t: TFunction) => [
         description: t('projects.items.hispania.description'),
         href: "https://hispania.thedm.es",
         links: [
-            <a href="https://hispania.thedm.es" className="card__link" target="_blank" >
+            <a href="https://hispania.thedm.es" className="card__link" target="_blank" rel="noopener noreferrer">
                 <button className="card__button">
                     {t('projects.demo')} <FontAwesomeIcon icon={faExternalLink} />
                 </button>
             </a>,
-            <a href="https://github.com/ddm19/rol" className="card__link" target="_blank" >
+            <a href="https://github.com/ddm19/rol" className="card__link" target="_blank" rel="noopener noreferrer">
                 <button className="card__button">
                     {t('projects.code')} <FontAwesomeIcon icon={faGithub} />
                 </button>

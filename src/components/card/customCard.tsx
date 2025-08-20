@@ -21,7 +21,7 @@ const CustomCard = (props: CustomCardProps) => {
     const { title, description, imageUrl, links, className, date, technologies, children, subtitle, key } = props;
     return (
         <div className={`card ${className ?? ''}`} key={key}>
-            {imageUrl && <img src={imageUrl} alt={typeof title === 'string' ? title : ''} className="card__image" />}
+            {imageUrl && <img src={imageUrl} alt={typeof title === 'string' ? title : ''} className="card__image" loading="lazy" />}
 
             <h2 className="card__title">{title}</h2>
             {subtitle && <h3 className="card__subtitle">{subtitle}</h3>}
