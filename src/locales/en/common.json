@@ -13,5 +13,14 @@
     "description": "I am a frontend developer passionate about UX/UI design, but I am not afraid to <1>get my hands dirty</1>. In my previous companies, I was nicknamed <1>Tinkerer</1> because I find the right solution to every challenge, no matter the technology. If you need a modern solution and you don't know where to start, you're in the right place!",
     "talkButton": "Let's Talk!",
     "careerTitle": "Professional Journey"
+  },
+  "projects": {
+    "title": "Portfolio",
+    "like": "Do you like what you see?",
+    "stack": "This is my main stack",
+    "talk": "Let's talk!",
+    "contact": "Contact me",
+    "download": "Download CV",
+    "more": "See more projects"
   }
 }
