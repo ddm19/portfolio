@@ -97,5 +97,26 @@
       "description": "Desarrollo de software a medida para necesidades específicas de tu negocio.",
       "create": "Crea tu Solución a Medida"
     }
+  },
+  "special": {
+    "title": "Especialidades",
+    "items": {
+      "specialized": {
+        "title": "Desarrollo Especializado",
+        "description": "Me centro en entender tu proyecto para ofrecer soluciones personalizadas y efectivas."
+      },
+      "innovation": {
+        "title": "Innovación Continua",
+        "description": "Siempre busco nuevas tecnologías y metodologías para mejorar la calidad y que obtengas el mejor resultado."
+      },
+      "collaboration": {
+        "title": "Colaboración Activa",
+        "description": "Trabajo de la mano contigo para asegurar que el producto final cumpla con tus expectativas y necesidades."
+      },
+      "results": {
+        "title": "Enfoque en Resultados",
+        "description": "Mi objetivo es entregar un producto que no solo funcione, sino que también sea escalable y fácil de mantener."
+      }
+    }
   }
 }

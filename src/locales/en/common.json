@@ -97,5 +97,26 @@
       "description": "Tailor-made software development for your business needs.",
       "create": "Create your Custom Solution"
     }
+  },
+  "special": {
+    "title": "Specialties",
+    "items": {
+      "specialized": {
+        "title": "Specialized Development",
+        "description": "I focus on understanding your project to offer personalized and effective solutions."
+      },
+      "innovation": {
+        "title": "Continuous Innovation",
+        "description": "I always seek new technologies and methodologies to improve quality and get you the best results."
+      },
+      "collaboration": {
+        "title": "Active Collaboration",
+        "description": "I work closely with you to ensure the final product meets your expectations and needs."
+      },
+      "results": {
+        "title": "Results-Oriented",
+        "description": "My goal is to deliver a product that not only works but is also scalable and easy to maintain."
+      }
+    }
   }
 }
