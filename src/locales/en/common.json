@@ -3,14 +3,15 @@
     "highlightWords": ["Advantage","Inspiration","Wisdom","Charisma","Strength"],
     "titlePrefix": "Grant your business",
     "titleSuffix": "with ",
-    "logoTitle": "Web, app and automation development in Alicante",
-    "subtitle": "I am Dani Domenech, a web developer based in Alicante, Spain, specialized in modern applications, automations and reliable tailored solutions.",
+    "logoTitle": "Web development and automations from Alicante",
+    "subtitle": "I am Dani Domenech, a web developer experienced in building modern and efficient web applications. My goal is to help you achieve your digital objectives with personalized and effective solutions.",
+    "extraTagline": "I also craft bespoke applications and automations from Alicante for businesses and professionals looking for a reliable partner.",
     "buttonContact": "Contact Me",
     "buttonCopy": "Copy Email",
     "notificationEmailCopied": "Email copied to clipboard"
   },
   "about": {
-    "sectionTitle": "About Me: Web Developer in Alicante",
+    "sectionTitle": "About Me",
     "description": "I am a frontend developer passionate about UX/UI design, but I am not afraid to <1>get my hands dirty</1>. In my previous companies, I was nicknamed <1>Tinkerer</1> because I find the right solution to every challenge, no matter the technology. If you need a modern solution and you don't know where to start, you're in the right place!",
     "talkButton": "Let's Talk!",
     "careerTitle": "Professional Journey"
@@ -49,8 +50,8 @@
     }
   },
   "services": {
-    "title": "Web Development & Automation Services",
-    "subtitle": "Tailored digital solutions, web development and automations to boost your project.",
+    "title": "Services",
+    "subtitle": "Tailored digital solutions to boost your project.",
     "web": {
       "title": "Web Development",
       "description": "Fast, accessible, SEO-optimized sites built with a modern stack.",

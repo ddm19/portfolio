@@ -30,6 +30,9 @@ const HeroSection = () => {
                     <p className="heroSection__subtitle">
                         {t('hero.subtitle')}
                     </p>
+                    <p className="heroSection__tagline">
+                        {t('hero.extraTagline')}
+                    </p>
                     <div className='heroSection__buttonContainer'>
                         <button>
                             <a href="#contact">{t('hero.buttonContact')}</a>

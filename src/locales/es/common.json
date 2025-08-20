@@ -3,14 +3,15 @@
     "highlightWords": ["Ventaja","Inspiración","Sabiduría","Carisma","Fuerza"],
   "titlePrefix": "Otórgale",
   "titleSuffix": "a tu negocio",
-    "logoTitle": "Desarrollo web, aplicaciones y automatizaciones en Alicante",
-    "subtitle": "Soy Dani Domenech, desarrollador web en Alicante, España, especializado en aplicaciones modernas, automatizaciones y soluciones fiables a medida.",
+    "logoTitle": "Desarrollo web y automatizaciones desde Alicante",
+    "subtitle": "Soy Dani Domenech, un desarrollador web con experiencia en la creación de aplicaciones web modernas y eficientes. Mi objetivo es ayudarte a alcanzar tus metas digitales con soluciones personalizadas y efectivas.",
+    "extraTagline": "También creo aplicaciones y automatizaciones a medida desde Alicante para empresas y profesionales que buscan una colaboración cercana y fiable.",
     "buttonContact": "Contacta Conmigo",
     "buttonCopy": "Copiar Email",
     "notificationEmailCopied": "Email copiado al portapapeles"
   },
   "about": {
-    "sectionTitle": "Sobre Mí: Desarrollador Web en Alicante",
+    "sectionTitle": "Sobre Mí",
     "description": "Soy desarrollador frontend apasionado por el diseño UX/UI, pero no me asusta <1>mancharme las manos</1> con nada. En mis anteriores empresas me bautizaron como <1>Cacharrero</1> porque encuentro la solución adecuada a cada reto, sea cual sea la tecnología. Si necesitas una solución moderna y no tienes claro por dónde empezar, ¡estás en el lugar correcto!",
     "talkButton": "¡Hablemos!",
     "careerTitle": "Trayectoria Profesional"
@@ -49,8 +50,8 @@
     }
   },
   "services": {
-    "title": "Servicios de Desarrollo Web y Automatizaciones",
-    "subtitle": "Soluciones digitales, desarrollo web y automatizaciones a medida para impulsar tu proyecto.",
+    "title": "Servicios",
+    "subtitle": "Soluciones digitales a medida para impulsar tu proyecto.",
     "web": {
       "title": "Desarrollo Web",
       "description": "Sitios rápidos, accesibles y optimizados para SEO con stack moderno.",
