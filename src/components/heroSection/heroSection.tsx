@@ -21,7 +21,6 @@ const HeroSection = () => {
         <section id='hero' className="heroSection customSection">
             <div className="heroSection__content">
                 <img draggable="false" src='/logo_engineer.svg' alt="Logo" className="heroSection__logo" />
-
                 <div>
                     <h2 className="heroSection__title">
                         {t('hero.titlePrefix')} <span className="heroSection__title--highlight">{text}</span> {t('hero.titleSuffix')}

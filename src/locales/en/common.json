@@ -2,8 +2,8 @@
   "hero": {
     "highlightWords": ["Advantage","Inspiration","Wisdom","Charisma","Strength"],
     "titlePrefix": "Grant your business",
-    "titleSuffix": "with ",
-    "subtitle": "I am Dani Domenech, a web developer experienced in building modern and efficient web applications. My goal is to help you achieve your digital goals with personalized and effective solutions.",
+    "titleSuffix": " ",
+    "subtitle": "I am Dani Domenech, a web developer experienced in building modern and efficient web applications. My goal is to help you achieve your digital objectives with personalized and effective solutions.",
     "buttonContact": "Contact Me",
     "buttonCopy": "Copy Email",
     "notificationEmailCopied": "Email copied to clipboard"

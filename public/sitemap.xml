@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.thedm.es/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.thedm.es/#services</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.thedm.es/#projects</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.thedm.es/#about</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.thedm.es/#contact</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.thedm.es/404.html</loc>
+    <priority>0.50</priority>
+  </url>
+</urlset>

@@ -64,10 +64,10 @@ function App() {
 
         <div className="logo">
           <a href='https://www.thedm.es'><img draggable="false" src="/logo.svg" alt="logo" className="logo__img" /> </a>
-          <h2 className="logo__text">
+          <h1 className="logo__text">
             <span>The<span className="logo__text--highlight">DM</span></span>
             <span> {!isMobile && '|'} Soluciones Digitales </span>
-          </h2>
+          </h1>
           <p className="logo__text--small">Dani Domenech</p>
         </div>
         <Navbar items={CONTACT_NAV_ITEMS} />
