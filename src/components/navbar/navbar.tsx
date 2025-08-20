@@ -1,12 +1,13 @@
 import './navbar.scss';
 import LanguageSwitcher from './LanguageSwitcher';
 import AnimatedIconLink from './components/animatedIconLink';
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 
 
 interface navbarItem {
     href: string;
-    icon: any;
+    icon: IconProp;
     label: string;
     title?: string;
 

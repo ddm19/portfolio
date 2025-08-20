@@ -2,7 +2,7 @@ import './projects.scss';
 import CustomCard from "components/card/customCard";
 import Carousel from 'components/carousel/carousel';
 import TechnologyList from 'components/card/components/technologyList';
-import { projects, technologies } from './constants';
+import { getProjects, technologies } from './constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faContactCard, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -10,6 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
     const { t } = useTranslation();
+    const projects = getProjects(t);
 
     return (
         <section className="projects customSection" id="projects">
