@@ -1,7 +1,7 @@
 import CustomCard from "components/card/customCard";
 import './special.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBrain, faHandshake, faLightbulb, faWrench } from "@fortawesome/free-solid-svg-icons";
+import { faHandshake, faFileInvoiceDollar, faCode, faHeadset } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'react-i18next';
 
 const Special = () => {
@@ -9,19 +9,19 @@ const Special = () => {
     const specials = [
         {
             title: t('special.items.specialized.title'),
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faBrain} className="card__icon" /> {t('special.items.specialized.description')}</span>,
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faHandshake} className="card__icon" /> {t('special.items.specialized.description')}</span>,
         },
         {
             title: t('special.items.innovation.title'),
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faLightbulb} className="card__icon" /> {t('special.items.innovation.description')}</span>,
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faFileInvoiceDollar} className="card__icon" /> {t('special.items.innovation.description')}</span>,
         },
         {
             title: t('special.items.collaboration.title'),
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faHandshake} className="card__icon" /> {t('special.items.collaboration.description')}</span>,
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faCode} className="card__icon" /> {t('special.items.collaboration.description')}</span>,
         },
         {
             title: t('special.items.results.title'),
-            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faWrench} className="card__icon" /> {t('special.items.results.description')}</span>,
+            description: <span className="specialContainer__description"><FontAwesomeIcon icon={faHeadset} className="card__icon" /> {t('special.items.results.description')}</span>,
         },
     ];
     return (
@@ -38,4 +38,3 @@ const Special = () => {
 }
 
 export default Special;
-

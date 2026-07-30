@@ -11,6 +11,7 @@ import ScrollToTop from 'components/scrollToTop/scrollToTop';
 import Projects from 'components/projects/projects';
 import Contact from 'components/contact/contact';
 import Services from 'components/services/services';
+import Faq from 'components/faq/faq';
 import LanguageSwitcher from 'components/navbar/LanguageSwitcher';
 
 
@@ -69,6 +70,7 @@ function App() {
             <span> {!isMobile && '|'} Soluciones Digitales </span>
           </h1>
           <p className="logo__text--small">Dani Domenech</p>
+          <p className="logo__text--tagline">Desarrollador Web Freelance en Alicante</p>
         </div>
         <Navbar items={CONTACT_NAV_ITEMS} />
         <Toast />
@@ -87,6 +89,7 @@ function App() {
           <Projects />
           <Services />
           <About />
+          <Faq />
           <Contact />
         </main>
 

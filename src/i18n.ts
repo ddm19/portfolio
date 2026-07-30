@@ -15,9 +15,19 @@ i18n
     fallbackLng: 'es',
     ns: ['common'],
     defaultNS: 'common',
-  interpolation: { escapeValue: false },
-  detection: { order: ['localStorage','navigator'], caches: ['localStorage'] }
+    interpolation: { escapeValue: false },
+    detection: {
+      order: ['querystring', 'localStorage', 'navigator'],
+      lookupQuerystring: 'lang',
+      caches: ['localStorage']
+    }
   });
 
+const syncHtmlLang = (lng: string) => {
+  document.documentElement.lang = lng === 'en' ? 'en' : 'es';
+};
+
+syncHtmlLang(i18n.language);
+i18n.on('languageChanged', syncHtmlLang);
+
 export default i18n;
- 

@@ -4,8 +4,17 @@ import './languageSwitcher.scss';
 export default function LanguageSwitcher() {
     const { i18n } = useTranslation();
     const current = i18n.language;
+
     const changeLanguage = (lng: string) => {
         i18n.changeLanguage(lng);
+
+        const url = new URL(window.location.href);
+        if (lng === 'en') {
+            url.searchParams.set('lang', 'en');
+        } else {
+            url.searchParams.delete('lang');
+        }
+        window.history.replaceState({}, '', url.toString());
     };
 
     return (

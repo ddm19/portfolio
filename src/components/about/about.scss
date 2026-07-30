@@ -141,7 +141,122 @@
                 right: 0;
             }
         }
+
+        @media (max-width: 768px)
+        {
+            width: 100%;
+            justify-self: stretch !important;
+        }
+    }
+
+    &__workExperienceContainer
+    {
+        @media (max-width: 768px)
+        {
+            &>*
+            {
+                justify-self: stretch;
+            }
+        }
     }
 
 
+}
+.about__stats
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-2);
+    margin-top: var(--spacing-3);
+    text-align: center;
+
+    @media (max-width: 768px)
+    {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-1-5);
+    }
+}
+
+.about__stat
+{
+    padding: var(--spacing-1-5);
+    border: 1px solid var(--color-primary-light);
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-card-light);
+}
+
+.about__statTitle
+{
+    color: var(--color-text-highlight);
+    font-size: var(--font-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.about__statDescription
+{
+    color: var(--color-gray-300);
+    font-size: var(--font-sm);
+    line-height: 1.5;
+}
+
+.about__process
+{
+    width: 100%;
+    margin-top: var(--spacing-4);
+}
+
+.about__processSteps
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-2);
+    margin-top: var(--spacing-2);
+
+    @media (max-width: 900px)
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px)
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+.about__processStep
+{
+    padding: var(--spacing-1-5);
+    border: 1px solid var(--color-text-light);
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-card-light);
+    position: relative;
+    text-align: left;
+}
+
+.about__processNumber
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size-lg);
+    height: var(--size-lg);
+    border-radius: var(--radius-full);
+    background: var(--color-primary-shadow);
+    color: var(--color-white, #fff);
+    font-weight: bold;
+    margin-bottom: var(--spacing-1);
+}
+
+.about__processStepTitle
+{
+    color: var(--color-white, #fff);
+    font-size: var(--font-base);
+    margin-bottom: var(--spacing-sm);
+}
+
+.about__processStepDescription
+{
+    color: var(--color-gray-300);
+    font-size: var(--font-sm);
+    line-height: 1.5;
 }

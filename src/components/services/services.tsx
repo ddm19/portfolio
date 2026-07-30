@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faPaintbrush, faMobileScreen, faMagnifyingGlassChart, faGears, faGlobe, faWandMagicSparkles, faComments, faWrench } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping, faPaintbrush, faMagnifyingGlassChart, faGears, faGlobe, faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 import CustomCard from "components/card/customCard";
 import { useTranslation } from 'react-i18next';
 import "./services.scss";
@@ -17,6 +17,15 @@ export default function Services() {
                 </a>,
                 <a href="#projects" className="card__link">
                     <button className="card__button">{t('services.web.projects')}</button>
+                </a>,
+            ]
+        },
+        {
+            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faMobileScreenButton} className="card__icon" /> {t('services.mobile.title')}</span>,
+            description: t('services.mobile.description'),
+            links: [
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.mobile.cta')}</button>
                 </a>,
             ]
         },
@@ -39,14 +48,8 @@ export default function Services() {
                 <a href="#contact" className="card__link">
                     <button className="card__button">{t('services.uiux.start')}</button>
                 </a>,
-            ]
-        },
-        {
-            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faMobileScreen} className="card__icon" /> {t('services.uxui.title')}</span>,
-            description: t('services.uxui.description'),
-            links: [
                 <a href="#contact" className="card__link">
-                    <button className="card__button">{t('services.uxui.audit')}</button>
+                    <button className="card__button">{t('services.uiux.audit')}</button>
                 </a>,
             ]
         },
@@ -66,36 +69,11 @@ export default function Services() {
                 <a href="#contact" className="card__link">
                     <button className="card__button">{t('services.integrations.integrate')}</button>
                 </a>,
-            ]
-        },
-        {
-            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faWandMagicSparkles} className="card__icon" />{t('services.automations.title')}</span>,
-            description: t('services.automations.description'),
-            links: [
                 <a href="#contact" className="card__link">
-                    <button className="card__button">{t('services.automations.optimize')}</button>
+                    <button className="card__button">{t('services.integrations.optimize')}</button>
                 </a>,
             ]
         },
-        {
-            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faComments} className="card__icon" /> {t('services.consulting.title')}</span>,
-            description: t('services.consulting.description'),
-            links: [
-                <a href="#contact" className="card__link">
-                    <button className="card__button">{t('services.consulting.schedule')}</button>
-                </a>,
-            ]
-        },
-        {
-            title: <span className="servicesContainer__title"><FontAwesomeIcon icon={faWrench} className="card__icon" /> {t('services.custom.title')}</span>,
-            description: t('services.custom.description'),
-            links: [
-                <a href="#contact" className="card__link">
-                    <button className="card__button">{t('services.custom.create')}</button>
-                </a>,
-            ]
-        },
-
     ];
 
     return (
@@ -112,6 +90,14 @@ export default function Services() {
                         links={s.links}
                     />
                 ))}
+            </div>
+
+            <div className="services__closing">
+                <h3 className="services__closingTitle">{t('services.closing.title')}</h3>
+                <p className="services__closingDescription">{t('services.closing.description')}</p>
+                <a href="#contact" className="card__link">
+                    <button className="card__button">{t('services.closing.cta')}</button>
+                </a>
             </div>
         </section>
     );

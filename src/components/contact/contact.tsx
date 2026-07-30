@@ -3,6 +3,8 @@ import "./contact.scss";
 import { contact } from "actions/contact";
 import { useTranslation } from "react-i18next";
 import type { TFunction } from "i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 type FormState = {
     name: string;
@@ -52,7 +54,6 @@ export default function Contact() {
     const validate = () => {
         const next: typeof errors = {};
         if (!form.name.trim()) next.name = t("contact.form.name.error");
-        if (!form.company.trim()) next.company = t("contact.form.company.error");
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) next.email = t("contact.form.email.error");
         if (form.services.length === 0) next.services = t("contact.form.services.error");
         if (form.message.trim().length < 10) next.message = t("contact.form.message.error");
@@ -95,6 +96,18 @@ export default function Contact() {
                 <>
                     <h2 className="contact__title">{t("contact.title")}</h2>
                     <p className="contact__subtitle">{t("contact.subtitle")}</p>
+
+                    <a
+                        href="https://wa.me/34653582886"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="contact__whatsapp"
+                    >
+                        <button type="button" className="contact__whatsappButton">
+                            <FontAwesomeIcon icon={faWhatsapp} /> {t("contact.whatsapp.cta")}
+                        </button>
+                    </a>
+                    <p className="contact__whatsappNote">{t("contact.whatsapp.note")}</p>
 
                     <form className="contact__form" onSubmit={onSubmit} noValidate>
                         <div className="contact__group">

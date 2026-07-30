@@ -171,3 +171,34 @@
         }
     }
 }
+.contact__whatsapp
+{
+    text-decoration: none;
+}
+
+.contact__whatsappButton
+{
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: var(--color-bg-success, #10B981);
+    color: var(--color-white, #fff);
+    border: none;
+    border-radius: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-1);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: var(--spacing-1);
+
+    &:hover
+    {
+        opacity: 0.9;
+    }
+}
+
+.contact__whatsappNote
+{
+    color: var(--color-gray-400);
+    font-size: var(--font-sm, 0.875rem);
+    margin-bottom: var(--spacing-2);
+}

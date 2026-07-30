@@ -1,18 +1,61 @@
 {
   "hero": {
-    "highlightWords": ["Ventaja","Inspiración","Sabiduría","Carisma","Fuerza"],
-  "titlePrefix": "Otórgale",
-  "titleSuffix": "a tu negocio",
-    "subtitle": "Soy Dani Domenech, un desarrollador web con experiencia en la creación de aplicaciones web modernas y eficientes. Mi objetivo es ayudarte a alcanzar tus metas digitales con soluciones personalizadas y efectivas.",
+    "highlightWords": [
+      "Ventaja",
+      "Velocidad",
+      "Confianza",
+      "Presencia",
+      "Solidez"
+    ],
+    "titlePrefix": "Otórgale",
+    "titleSuffix": "a tu negocio",
+    "subtitle": "Diseño y desarrollo webs, tiendas online y herramientas a medida para negocios que quieren vender más y verse profesionales en internet. Trato directo conmigo, sin plantillas genéricas ni intermediarios.",
     "buttonContact": "Contacta Conmigo",
     "buttonCopy": "Copiar Email",
-    "notificationEmailCopied": "Email copiado al portapapeles"
+    "notificationEmailCopied": "Email copiado al portapapeles",
+    "buttonWhatsapp": "Escríbeme por WhatsApp",
+    "buttonProjects": "Ver Proyectos"
   },
   "about": {
     "sectionTitle": "Sobre Mí",
     "description": "Soy desarrollador frontend apasionado por el diseño UX/UI, pero no me asusta <1>mancharme las manos</1> con nada. En mis anteriores empresas me bautizaron como <1>Cacharrero</1> porque encuentro la solución adecuada a cada reto, sea cual sea la tecnología. Si necesitas una solución moderna y no tienes claro por dónde empezar, ¡estás en el lugar correcto!",
     "talkButton": "¡Hablemos!",
-    "careerTitle": "Trayectoria Profesional"
+    "careerTitle": "Trayectoria Profesional",
+    "stats": {
+      "stat1": {
+        "title": "Programando desde 2019",
+        "description": "Más de 7 años construyendo productos web reales."
+      },
+      "stat2": {
+        "title": "+5 proyectos propios en producción",
+        "description": "Marketplaces, apps, encuestas y herramientas ya funcionando."
+      },
+      "stat3": {
+        "title": "Trato 100% directo",
+        "description": "Sin comerciales ni intermediarios: hablas conmigo."
+      }
+    },
+    "process": {
+      "title": "Cómo Trabajo",
+      "steps": {
+        "step1": {
+          "title": "Cuéntame tu proyecto",
+          "description": "Me escribes por WhatsApp o el formulario y hablamos de lo que necesitas."
+        },
+        "step2": {
+          "title": "Recibes una propuesta clara",
+          "description": "Alcance, plazos y precio cerrado antes de empezar. Sin letra pequeña."
+        },
+        "step3": {
+          "title": "Desarrollo con avances visibles",
+          "description": "Te mantengo al tanto del progreso, no desapareces hasta el final."
+        },
+        "step4": {
+          "title": "Lanzamiento y soporte",
+          "description": "Publicamos tu proyecto y sigo disponible para cambios y dudas."
+        }
+      }
+    }
   },
   "projects": {
     "title": "Portfolio",
@@ -28,24 +71,69 @@
       "bunkaDojo": {
         "title": "Bunka Dojo",
         "description": "Marketplace de TCGs y juegos de mesa.",
-        "alt": "Bunka Dojo"
+        "alt": "Bunka Dojo",
+        "longDescription": "Marketplace de compraventa de cartas TCG y juegos de mesa que cofundé y desarrollé. Incluye pasarela de pago con Stripe, gestión de inventario y pedidos, panel de administración para el catálogo y backend con Supabase."
+      },
+      "purpleShift": {
+        "title": "Purple Shift Polls",
+        "description": "Sistema de encuestas y votaciones en tiempo real con panel de administración, usado para el playtest de mi videojuego Purple Shift.",
+        "alt": "Purple Shift Polls",
+        "longDescription": "Sistema de encuestas y votaciones en tiempo real con panel de administración, construido con React y Supabase. Lo uso para el playtest de mi videojuego Purple Shift."
       },
       "foodContest": {
         "title": "Food Contest",
         "description": "Página web de concursos de comida.",
-        "alt": "Food Contest"
+        "alt": "Food Contest",
+        "longDescription": "Plataforma web para organizar y gestionar concursos de comida, con backend en Supabase y despliegue en Vercel."
       },
       "aqivap": {
         "title": "Aqivap",
         "description": "Maqueta de una tienda online de vapeo.",
-        "alt": "Aqivap"
+        "alt": "Aqivap",
+        "longDescription": "Maqueta de una tienda online de vapeo creada como ejercicio de diseño UI/UX y flujo de compra. No es una tienda real en producción."
       },
       "hispania": {
         "title": "Hispania",
         "description": "Página web / Blog de juegos de Rol y D&D.",
-        "alt": "Hispania"
+        "alt": "Hispania",
+        "longDescription": "Blog de rol y D&D con gestión de usuarios, sistema de pedidos para la tienda, gestión de mapas interactivos y fichas de personaje. Pasarela de pago con Stripe y backend en Node.js."
+      },
+      "gamedev": {
+        "title": "Portfolio Game Designer",
+        "description": "Portfolio para Game Designer con estilo moderno y animaciones.",
+        "alt": "Portfolio Game Designer",
+        "longDescription": "Portfolio interactivo con animaciones fluidas (Framer Motion), pensado para mostrar trabajo de diseño de videojuegos de forma moderna y visual."
+      },
+      "ndaLogistics": {
+        "title": "Gestión de Repartos",
+        "description": "App interna de gestión de repartos para una empresa de transporte (proyecto confidencial, bajo NDA).",
+        "longDescription": "Aplicación interna para una empresa de transporte: la empresa asigna paquetes a repartir, los repartidores ven su lista de entregas pendientes, firman el albarán digitalmente al entregar y todo queda guardado con histórico de entregas.",
+        "alt": "Gestión de Repartos (proyecto confidencial)",
+        "confidentialNote": "Proyecto real bajo NDA. No puedo compartir capturas ni el nombre del cliente.",
+        "features": [
+          "Asignación de paquetes",
+          "Listado de entregas pendientes",
+          "Firma digital de albarán",
+          "Histórico de entregas"
+        ]
+      },
+      "ndaDocuments": {
+        "title": "Gestor Documental",
+        "description": "Gestor documental interno para empresa, con chat y gestión de usuarios (proyecto confidencial, bajo NDA).",
+        "longDescription": "Gestor documental interno para empresa: organización de carpetas y documentos, chat interno entre usuarios y gestión de usuarios y permisos.",
+        "alt": "Gestor Documental (proyecto confidencial)",
+        "confidentialNote": "Proyecto real bajo NDA. No puedo compartir capturas ni el nombre del cliente.",
+        "features": [
+          "Carpetas y documentos",
+          "Chat interno",
+          "Gestión de usuarios",
+          "Control de permisos"
+        ]
       }
-    }
+    },
+    "learnMore": "Saber más",
+    "confidentialBadge": "Proyecto Confidencial",
+    "wantSimilar": "Quiero un proyecto así"
   },
   "services": {
     "title": "Servicios",
@@ -56,6 +144,11 @@
       "budget": "Solicita un presupuesto",
       "projects": "Ver proyectos"
     },
+    "mobile": {
+      "title": "Aplicaciones Móviles",
+      "description": "Apps nativas e híbridas para digitalizar procesos de tu negocio, incluidas aplicaciones de gestión documental para empresas de Valencia y Alicante (proyectos bajo NDA).",
+      "cta": "Cuéntame tu Proyecto"
+    },
     "ecommerce": {
       "title": "E-commerce",
       "description": "Tiendas online seguras y escalables, con pasarelas de pago integradas.",
@@ -63,13 +156,9 @@
       "cases": "Casos de uso"
     },
     "uiux": {
-      "title": "UI/UX",
-      "description": "Diseño centrado en el usuario, flujos claros, app web responsive y PWA para una experiencia de usuario excepcional.",
-      "start": "Empieza tu App"
-    },
-    "uxui": {
-      "title": "UX / UI",
-      "description": "Diseño orientado a la experiencia del usuario, coherente y atractivo.",
+      "title": "UI / UX",
+      "description": "Diseño centrado en el usuario: flujos claros, apps web responsive y PWA para una experiencia excepcional.",
+      "start": "Empieza tu App",
       "audit": "Solicita una Auditoría"
     },
     "seo": {
@@ -78,44 +167,35 @@
       "improve": "Mejora mi SEO"
     },
     "integrations": {
-      "title": "Integraciones",
-      "description": "APIs, automatizaciones y conectores a servicios de terceros.",
-      "integrate": "Integra Ahora"
-    },
-    "automations": {
-      "title": "Automatizaciones",
-      "description": "Optimiza procesos y reduce costes con automatizaciones inteligentes.",
+      "title": "Integraciones y Automatizaciones",
+      "description": "APIs, conectores a terceros y automatizaciones inteligentes que optimizan procesos y reducen costes.",
+      "integrate": "Integra Ahora",
       "optimize": "Optimiza mis Procesos"
     },
-    "consulting": {
-      "title": "Consultoría",
-      "description": "Asesoramiento experto para la toma de decisiones estratégicas.",
-      "schedule": "Agenda una Consultoría"
-    },
-    "custom": {
-      "title": "Soluciones a Medida",
-      "description": "Desarrollo de software a medida para necesidades específicas de tu negocio.",
-      "create": "Crea tu Solución a Medida"
+    "closing": {
+      "title": "¿Tu proyecto no encaja en ninguna casilla?",
+      "description": "Cuéntamelo y buscamos juntos la solución a medida.",
+      "cta": "Hablemos"
     }
   },
   "special": {
-    "title": "Especialidades",
+    "title": "¿Por qué Trabajar Conmigo?",
     "items": {
       "specialized": {
-        "title": "Desarrollo Especializado",
-        "description": "Me centro en entender tu proyecto para ofrecer soluciones personalizadas y efectivas."
+        "title": "Trato Directo, Sin Intermediarios",
+        "description": "Hablas conmigo desde el primer mensaje hasta la entrega. Sin comerciales, sin cadena de emails perdidos."
       },
       "innovation": {
-        "title": "Innovación Continua",
-        "description": "Siempre busco nuevas tecnologías y metodologías para mejorar la calidad y que obtengas el mejor resultado."
+        "title": "Presupuesto Claro Antes de Empezar",
+        "description": "Sabes lo que vas a pagar antes de que se escriba una sola línea de código. Sin sorpresas a mitad de proyecto."
       },
       "collaboration": {
-        "title": "Colaboración Activa",
-        "description": "Trabajo de la mano contigo para asegurar que el producto final cumpla con tus expectativas y necesidades."
+        "title": "Código Propio, No una Plantilla",
+        "description": "Cada web se construye a medida para tu negocio, no sobre una plantilla genérica que ya usan otros diez negocios de tu zona."
       },
       "results": {
-        "title": "Enfoque en Resultados",
-        "description": "Mi objetivo es entregar un producto que no solo funcione, sino que también sea escalable y fácil de mantener."
+        "title": "Acompañamiento Tras el Lanzamiento",
+        "description": "El proyecto no termina el día que se publica. Sigo disponible para cambios, dudas y mantenimiento."
       }
     }
   },
@@ -234,7 +314,7 @@
         "error": "El nombre es obligatorio."
       },
       "company": {
-        "label": "Empresa*",
+        "label": "Empresa (opcional)",
         "placeholder": "Nombre de la empresa",
         "error": "El nombre de la empresa es obligatorio."
       },
@@ -265,6 +345,39 @@
         "integrations": "Integraciones",
         "consulting": "Consultoría",
         "other": "Otros"
+      }
+    },
+    "whatsapp": {
+      "cta": "Escríbeme por WhatsApp",
+      "note": "Respuesta más rápida que por formulario."
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "items": {
+      "q1": {
+        "question": "¿Cuánto cuesta una página web?",
+        "answer": "Cada proyecto es distinto. Antes de empezar recibes un presupuesto cerrado y sin sorpresas, ajustado a lo que necesita tu negocio."
+      },
+      "q2": {
+        "question": "¿Cuánto tarda un proyecto?",
+        "answer": "El plazo depende del alcance. Te lo confirmo en la propuesta inicial, junto con el precio, antes de que empecemos."
+      },
+      "q3": {
+        "question": "¿Trabajas con negocios fuera de Alicante?",
+        "answer": "Sí, trabajo en remoto con negocios de toda España. Actualmente tengo proyectos con empresas de Alicante y Valencia."
+      },
+      "q4": {
+        "question": "¿Qué tipo de proyectos haces?",
+        "answer": "Webs, tiendas online, aplicaciones móviles y herramientas a medida, como sistemas de gestión documental para empresas."
+      },
+      "q5": {
+        "question": "¿Qué pasa después de publicar la web?",
+        "answer": "Sigo disponible para cambios, dudas y mantenimiento. El proyecto no termina el día del lanzamiento."
+      },
+      "q6": {
+        "question": "¿Cómo te contacto?",
+        "answer": "Por WhatsApp para una respuesta más rápida, o rellenando el formulario de contacto de esta misma página."
       }
     }
   }

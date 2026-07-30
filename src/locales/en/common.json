@@ -1,18 +1,61 @@
 {
   "hero": {
-    "highlightWords": ["Advantage","Inspiration","Wisdom","Charisma","Strength"],
+    "highlightWords": [
+      "Advantage",
+      "Speed",
+      "Trust",
+      "Presence",
+      "Strength"
+    ],
     "titlePrefix": "Grant your business",
     "titleSuffix": " ",
-    "subtitle": "I am Dani Domenech, a web developer experienced in building modern and efficient web applications. My goal is to help you achieve your digital objectives with personalized and effective solutions.",
+    "subtitle": "I design and build websites, online stores and custom tools for businesses that want to sell more and look professional online. Direct contact with me, no generic templates or middlemen.",
     "buttonContact": "Contact Me",
     "buttonCopy": "Copy Email",
-    "notificationEmailCopied": "Email copied to clipboard"
+    "notificationEmailCopied": "Email copied to clipboard",
+    "buttonWhatsapp": "Message me on WhatsApp",
+    "buttonProjects": "See Projects"
   },
   "about": {
     "sectionTitle": "About Me",
     "description": "I am a frontend developer passionate about UX/UI design, but I am not afraid to <1>get my hands dirty</1>. In my previous companies, I was nicknamed <1>Tinkerer</1> because I find the right solution to every challenge, no matter the technology. If you need a modern solution and you don't know where to start, you're in the right place!",
     "talkButton": "Let's Talk!",
-    "careerTitle": "Professional Journey"
+    "careerTitle": "Professional Journey",
+    "stats": {
+      "stat1": {
+        "title": "Coding since 2019",
+        "description": "7+ years building real web products."
+      },
+      "stat2": {
+        "title": "5+ live projects",
+        "description": "Marketplaces, apps, surveys and tools already running."
+      },
+      "stat3": {
+        "title": "100% direct contact",
+        "description": "No salespeople, no middlemen: you talk to me."
+      }
+    },
+    "process": {
+      "title": "How I Work",
+      "steps": {
+        "step1": {
+          "title": "Tell me about your project",
+          "description": "Message me on WhatsApp or the form and we talk about what you need."
+        },
+        "step2": {
+          "title": "Get a clear proposal",
+          "description": "Scope, timeline and a fixed price before we start. No fine print."
+        },
+        "step3": {
+          "title": "Development with visible progress",
+          "description": "You stay in the loop, not left waiting until the very end."
+        },
+        "step4": {
+          "title": "Launch and support",
+          "description": "We publish your project and I stay available for changes and questions."
+        }
+      }
+    }
   },
   "projects": {
     "title": "Portfolio",
@@ -28,24 +71,69 @@
       "bunkaDojo": {
         "title": "Bunka Dojo",
         "description": "TCG and board game marketplace.",
-        "alt": "Bunka Dojo"
+        "alt": "Bunka Dojo",
+        "longDescription": "TCG and board game marketplace I co-founded and built. Includes Stripe payments, inventory and order management, an admin panel for the catalog, and a Supabase backend."
+      },
+      "purpleShift": {
+        "title": "Purple Shift Polls",
+        "description": "Real-time survey and voting system with an admin panel, used for the playtest of my game Purple Shift.",
+        "alt": "Purple Shift Polls",
+        "longDescription": "Real-time survey and voting system with an admin panel, built with React and Supabase. I use it for the playtest of my game Purple Shift."
       },
       "foodContest": {
         "title": "Food Contest",
         "description": "Food contest website.",
-        "alt": "Food Contest"
+        "alt": "Food Contest",
+        "longDescription": "Web platform to organize and manage food contests, with a Supabase backend deployed on Vercel."
       },
       "aqivap": {
         "title": "Aqivap",
         "description": "Mockup of a vape online store.",
-        "alt": "Aqivap"
+        "alt": "Aqivap",
+        "longDescription": "Mockup of a vape online store built as a UI/UX and checkout-flow design exercise. Not a real store in production."
       },
       "hispania": {
         "title": "Hispania",
         "description": "Website / blog about role-playing games and D&D.",
-        "alt": "Hispania"
+        "alt": "Hispania",
+        "longDescription": "Role-playing and D&D blog with user management, an order system for the store, interactive map management and character sheets. Stripe payments and a Node.js backend."
+      },
+      "gamedev": {
+        "title": "Portfolio Game Designer",
+        "description": "Portfolio for Game Designer with modern and animated style.",
+        "alt": "Portfolio Game Designer",
+        "longDescription": "Interactive portfolio with smooth animations (Framer Motion), designed to showcase game design work in a modern, visual way."
+      },
+      "ndaLogistics": {
+        "title": "Delivery Management",
+        "description": "Internal delivery-management app for a transport company (confidential project, under NDA).",
+        "longDescription": "Internal app for a transport company: the company assigns packages for delivery, drivers see their list of pending deliveries, sign the delivery note digitally on handoff, and everything is kept with a delivery history.",
+        "alt": "Delivery Management (confidential project)",
+        "confidentialNote": "Real project under NDA. I can't share screenshots or the client's name.",
+        "features": [
+          "Package assignment",
+          "Pending deliveries list",
+          "Digital delivery-note signature",
+          "Delivery history"
+        ]
+      },
+      "ndaDocuments": {
+        "title": "Document Manager",
+        "description": "Internal document manager for a company, with chat and user management (confidential project, under NDA).",
+        "longDescription": "Internal document manager for a company: folder and document organization, internal chat between users, and user and permission management.",
+        "alt": "Document Manager (confidential project)",
+        "confidentialNote": "Real project under NDA. I can't share screenshots or the client's name.",
+        "features": [
+          "Folders and documents",
+          "Internal chat",
+          "User management",
+          "Permission control"
+        ]
       }
-    }
+    },
+    "learnMore": "Learn more",
+    "confidentialBadge": "Confidential Project",
+    "wantSimilar": "I want a project like this"
   },
   "services": {
     "title": "Services",
@@ -56,6 +144,11 @@
       "budget": "Request a quote",
       "projects": "See projects"
     },
+    "mobile": {
+      "title": "Mobile Apps",
+      "description": "Native and hybrid apps to digitize your business processes, including document-management apps for companies in Valencia and Alicante (NDA projects).",
+      "cta": "Tell Me About Your Project"
+    },
     "ecommerce": {
       "title": "E-commerce",
       "description": "Secure and scalable online stores with integrated payment gateways.",
@@ -63,13 +156,9 @@
       "cases": "Use cases"
     },
     "uiux": {
-      "title": "UI/UX",
-      "description": "User-centered design, clear flows, responsive web apps and PWAs for an exceptional experience.",
-      "start": "Start your App"
-    },
-    "uxui": {
-      "title": "UX / UI",
-      "description": "Design focused on user experience, consistent and appealing.",
+      "title": "UI / UX",
+      "description": "User-centered design: clear flows, responsive web apps and PWAs for an exceptional experience.",
+      "start": "Start your App",
       "audit": "Request an Audit"
     },
     "seo": {
@@ -78,44 +167,35 @@
       "improve": "Improve my SEO"
     },
     "integrations": {
-      "title": "Integrations",
-      "description": "APIs, automations and connectors to third-party services.",
-      "integrate": "Integrate Now"
-    },
-    "automations": {
-      "title": "Automations",
-      "description": "Optimize processes and reduce costs with intelligent automations.",
+      "title": "Integrations & Automations",
+      "description": "APIs, third-party connectors and intelligent automations that streamline processes and cut costs.",
+      "integrate": "Integrate Now",
       "optimize": "Optimize my Processes"
     },
-    "consulting": {
-      "title": "Consulting",
-      "description": "Expert advice to make strategic decisions.",
-      "schedule": "Schedule a Consultation"
-    },
-    "custom": {
-      "title": "Custom Solutions",
-      "description": "Tailor-made software development for your business needs.",
-      "create": "Create your Custom Solution"
+    "closing": {
+      "title": "Not sure your project fits any of these?",
+      "description": "Tell me about it and we'll figure out the right solution together.",
+      "cta": "Let's talk"
     }
   },
   "special": {
-    "title": "Specialties",
+    "title": "Why Work With Me?",
     "items": {
       "specialized": {
-        "title": "Specialized Development",
-        "description": "I focus on understanding your project to offer personalized and effective solutions."
+        "title": "Direct Contact, No Middlemen",
+        "description": "You talk to me from the first message to delivery. No salespeople, no lost email chains."
       },
       "innovation": {
-        "title": "Continuous Innovation",
-        "description": "I always seek new technologies and methodologies to improve quality and get you the best results."
+        "title": "Clear Pricing Before We Start",
+        "description": "You know what you'll pay before a single line of code is written. No surprises halfway through."
       },
       "collaboration": {
-        "title": "Active Collaboration",
-        "description": "I work closely with you to ensure the final product meets your expectations and needs."
+        "title": "Custom-Built, Not a Template",
+        "description": "Every site is built from scratch for your business, not on a generic template already used by ten other businesses nearby."
       },
       "results": {
-        "title": "Results-Oriented",
-        "description": "My goal is to deliver a product that not only works but is also scalable and easy to maintain."
+        "title": "Support After Launch",
+        "description": "The project doesn't end on launch day. I stay available for changes, questions and maintenance."
       }
     }
   },
@@ -234,7 +314,7 @@
         "error": "Name is required."
       },
       "company": {
-        "label": "Company*",
+        "label": "Company (optional)",
         "placeholder": "Company name",
         "error": "Company name is required."
       },
@@ -265,6 +345,39 @@
         "integrations": "Integrations",
         "consulting": "Consulting",
         "other": "Others"
+      }
+    },
+    "whatsapp": {
+      "cta": "Message me on WhatsApp",
+      "note": "Faster reply than the form below."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": {
+      "q1": {
+        "question": "How much does a website cost?",
+        "answer": "Every project is different. Before we start you get a fixed quote with no surprises, tailored to what your business needs."
+      },
+      "q2": {
+        "question": "How long does a project take?",
+        "answer": "It depends on the scope. I confirm the timeline in the initial proposal, together with the price, before we begin."
+      },
+      "q3": {
+        "question": "Do you work with businesses outside Alicante?",
+        "answer": "Yes, I work remotely with businesses across Spain. I currently have projects with companies in Alicante and Valencia."
+      },
+      "q4": {
+        "question": "What kind of projects do you build?",
+        "answer": "Websites, online stores, mobile apps and custom tools, such as document-management systems for companies."
+      },
+      "q5": {
+        "question": "What happens after the site goes live?",
+        "answer": "I stay available for changes, questions and maintenance. The project doesn't end on launch day."
+      },
+      "q6": {
+        "question": "How do I contact you?",
+        "answer": "On WhatsApp for a faster reply, or by filling out the contact form on this page."
       }
     }
   }

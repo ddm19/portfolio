@@ -2,14 +2,11 @@ import { useRef } from 'react';
 import './about.scss';
 import React from 'react';
 import Special from 'components/special/special';
-import Experience from 'components/experience/experience';
 import { useTranslation, Trans } from 'react-i18next';
 
 const About = () => {
     const linkRef = useRef<HTMLAnchorElement>(null);
     const { t } = useTranslation();
-
-
 
     const startPulseAnimation = () => {
         if (linkRef.current) {
@@ -23,6 +20,9 @@ const About = () => {
             setTimeout(startPulseAnimation, 2000);
         }
     };
+
+    const stats = ['stat1', 'stat2', 'stat3'] as const;
+    const steps = ['step1', 'step2', 'step3', 'step4'] as const;
 
     return (
         <section id='about' className="about customSection">
@@ -47,12 +47,30 @@ const About = () => {
                             </a>
                         </span>
                     </p>
-                    <h2 className="about__title">{t('about.careerTitle')}</h2>
+
+                    <div className="about__stats">
+                        {stats.map((key) => (
+                            <div className="about__stat" key={key}>
+                                <h3 className="about__statTitle">{t(`about.stats.${key}.title`)}</h3>
+                                <p className="about__statDescription">{t(`about.stats.${key}.description`)}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 
-            <Experience />
-
+            <div className="about__process">
+                <h2 className="about__title">{t('about.process.title')}</h2>
+                <div className="about__processSteps">
+                    {steps.map((key, index) => (
+                        <div className="about__processStep" key={key}>
+                            <span className="about__processNumber">{index + 1}</span>
+                            <h3 className="about__processStepTitle">{t(`about.process.steps.${key}.title`)}</h3>
+                            <p className="about__processStepDescription">{t(`about.process.steps.${key}.description`)}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </section>
     );
 }

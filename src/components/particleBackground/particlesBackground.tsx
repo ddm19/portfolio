@@ -32,43 +32,25 @@ export default function ParticlesBackground() {
                         onHover: { enable: true, mode: 'repulse' },
                     },
                     modes: {
-                        repulse: { distance: 70 },
-                        push: { quantity: 1 },
+                        repulse: { distance: 80 },
                     },
                 },
                 particles: {
-                    number: { value: 30, density: { enable: false } },
-                    shape: {
-                        type: 'image',
-                        options: {
-                            image: [
-                                { src: '/d20.png' },
-                                { src: '/d6.png' },
-                                { src: '/d4.png' },
-                            ]
-                        }
-                    },
-                    size: { value: { min: 45, max: 45 } },
-                    opacity: { value: 0.5 },
-
+                    number: { value: 45, density: { enable: true, width: 1600, height: 900 } },
+                    color: { value: '#A64D79' },
+                    shape: { type: 'circle' },
+                    size: { value: { min: 1, max: 3 } },
+                    opacity: { value: 0.35 },
                     links: {
-                        enable: false,
+                        enable: true,
+                        distance: 140,
+                        color: '#6A1E55',
+                        opacity: 0.25,
+                        width: 1,
                     },
-
-                    // Habilita rotación aleatoria y animada
-                    rotate: {
-                        value: { min: 0, max: 360 },
-                        animation: {
-                            enable: true,
-                            speed: 10,
-                            sync: false
-                        },
-                        direction: 'random',
-                    },
-
                     move: {
                         enable: true,
-                        speed: 2,
+                        speed: 0.6,
                         outModes: { default: 'out' },
                     },
                 },

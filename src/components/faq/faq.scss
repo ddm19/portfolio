@@ -1,0 +1,45 @@
+.faq
+{
+    width: 70%;
+
+    @media (max-width: 768px)
+    {
+        width: 100%;
+    }
+
+    &__list
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-1-5);
+        margin-top: var(--spacing-2);
+        text-align: left;
+
+        @media (max-width: 900px)
+        {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item
+    {
+        padding: var(--spacing-1-5);
+        border: 1px solid var(--color-text-light);
+        border-radius: var(--radius-lg);
+        background: var(--color-bg-card-light);
+    }
+
+    &__question
+    {
+        color: var(--color-white, #fff);
+        font-size: var(--font-base);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    &__answer
+    {
+        color: var(--color-gray-300);
+        font-size: var(--font-sm);
+        line-height: 1.6;
+    }
+}
